@@ -1,0 +1,33 @@
+.cuisine{
+    padding:10px;
+    margin-top: -40px;
+}
+.NextArrow{
+    display: "block"; background-color: "#2d70d4"
+}
+
+.container{
+    padding:10;
+    /* padding: 65px 40px 65px 180px; */
+    background-repeat: no-repeat;
+    background-size: auto 280px;
+    background-position: -40px 50%;
+    z-index: 0;
+    transition: .3s ease;
+}
+
+.image{
+    margin-left:10px;
+    height: 200px;
+    width:200px;
+}
+    /* .container:hover{
+        white-space: nowrap;
+        transform: translate(5%, 0%);
+    } */
+.data{
+    padding:10;
+    margin-left: 100px;
+    z-index: 0;
+    transition: .3s ease;
+}

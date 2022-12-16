@@ -1,0 +1,158 @@
+
+:root {
+
+  --font-main: 'Open Sans';
+  --font-headers: 'Fira Sans';
+
+}
+.Nav {
+  position: relative;
+    padding: 12px 8px;
+    background-color: white;
+    color: black;
+    border: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+        font-family: 'Fira Sans',serif;
+        font-family: var(--font-headers),serif;
+    font-weight: 700;
+    font-size: 18px;
+    font-weight: 600;
+    /* transition: 1s; */
+  }
+  .Nav::after{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    content: "" ;
+    width: 0% ;
+    height: 3px;
+    background-color: #2d70d4;
+    transition: width 0.4s ease-out;
+  }
+  
+  .Nav:hover.Nav::after {color: #2d70d4; width:100% ;}
+    
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    transition:10s;
+  }
+  
+  .dropdown-content {
+    border-radius: 10%;
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    padding:10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  
+ 
+    animation: fadeIn .35s;
+    z-index: 1;
+  
+   
+  }
+  
+  .dropdown-content a {
+    color: rgb(84, 101, 228);
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Fira Sans',serif;
+    font-family: var(--font-headers),serif;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .dropdown-content a:hover { background-color: rgb(154, 170, 223);   }
+
+.dropdown:hover .dropdown-content {display: block;color: rgb(77, 109, 214);}
+
+
+@keyframes fadeIn  {
+
+   100%{opacity: 1; left:0px; top:45px;     transform: translateY(60) }
+      0% {opacity: 1; left:0px; top:100px; transform: translateY(0px) } 
+      
+      
+  }
+ 
+
+
+
+
+
+
+
+
+  .auth{
+    justify-content:center;
+    align-items:center;
+    display:flex;
+    font-size: 18px;
+    font-family: 'Fira Sans',serif;
+    font-family: var(--font-headers),serif;
+    background-color:white;
+    
+  }
+  .SignUp{
+    border:none;
+    background-color:white;
+    font-family: 'Fira Sans',serif;
+    font-weight: 300;
+    font-size: 18px;
+    font-weight: 200;
+    padding:10px 20px;
+    text-transform:capitalize;
+    cursor:pointer;
+    transform:all 0.3s;
+    position:relative;
+    border-top-left-radius: 3.5px;
+    border-top-right-radius: 3.5px;
+    border-bottom-left-radius: 3.5px;
+    border-bottom-right-radius: 3.5px;
+    font-style: bold;
+    margin: 4px;
+  }
+  .SignUp:before{
+    content:"";
+    position :absolute;
+    width:24px;
+    height:24px;
+    top:-5px;
+      left:-5px;
+    border-top:2px solid rgb(37, 136, 223);
+    border-left:2px solid rgb(64, 124, 228);
+    transition:all 0.25s;
+    border-top-left-radius: 3.5px;
+    border-top-right-radius: 3.5px;
+   
+  }
+  .SignUp:hover:before ,.SignUp:hover:after{
+    width:104%;
+    height:110%;
+  }
+  .SignUp:after{
+    content:"";
+    position :absolute;
+    width:24px;
+    height:24px;
+    bottom:-5px;
+      right:-4px;
+    border-bottom:2px solid rgb(49, 105, 225);
+    border-right:2px solid rgb(59, 106, 224);
+    transition:all 0.30s;
+    border-bottom-left-radius: 3.5px;
+    border-bottom-right-radius: 3.5px;
+  }
+  .fa-sign-in {
+    color: #2d70d4;
+  }
+  .fa-user-o {
+    color: #f5f7fb;
+  }

@@ -1,0 +1,57 @@
+.image-wrap {
+    width: 100vw;
+    height: 50vw;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    padding:2px;
+    color: rgb(194, 200, 206);
+    /* backdrop-filter: drop-shadow(4px 4px 10px blue); */
+  }
+  
+
+  .image-wrap img {
+    width: 100vw;
+    /* animation: move 40s ease; */
+    /* Add infinite to loop. */
+   
+    animation:zoom-in 80s ease infinite;
+    color: rgba(0, 0, 0, 0.5);
+    /* -ms-animation: move 40s ease;
+    -webkit-animation: move 40s ease;
+    animation: move 40s ease;
+    -moz-animation: move 40s ease;
+    position: absolute; */
+    
+    
+  
+  }
+  .overlay {
+   
+  opacity: .5;  
+  }
+  .text{
+    display: flex;
+    z-index: 2;
+    position: absolute;
+    margin-top: 100px;
+    color: rgb(254, 255, 255);
+    justify-content: center;
+    align-items: center;
+    margin-left: 28%;
+    /* -webkit-text-stroke: 1px rgb(141, 198, 242); */
+  }
+  
+ 
+
+  @keyframes zoom-in {
+    0% {
+      transform: scale(1,1);
+    }
+    25% {
+      transform: scale(1.2, 1.2);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
