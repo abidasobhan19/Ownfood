@@ -69,7 +69,7 @@ const Custom_Search = () => {
             <input
               type="text"
               placeholder="Zip Code  "
-              style={{ width: "100%" }}
+              style={{ width: "50%" }}
             />
 
             <button>
@@ -87,7 +87,7 @@ const Custom_Search = () => {
           </form>
           <Button
             variant="contained"
-            style={{ marginLeft: "1%", width: 100, height: 50 }}
+            style={{ marginLeft: "1%", width: 100, height: 43 }}
           >
             Search
           </Button>

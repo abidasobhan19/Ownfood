@@ -1,6 +1,5 @@
-
-.rightBtn,
-.leftBtn {
+ .right,
+.left {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -26,16 +25,26 @@
   -ms-transition: all linear 0.3s;
   -o-transition: all linear 0.3s;
 }
-.rightBtn:hover,
-.leftBtn:hover {
+.right:hover,
+.left:hover {
   color: var(--white);
   background: var(--primary);
 }
-.rightBtn {
+.right {
   right: -10px;
-  /* background-color: aquamarine; */
-}
-.leftBtn {
+ 
+} 
+.left {
   left: -10px;
-  /* background-color: aquamarine; */
+  
+} 
+
+
+
+
+.home-index-slider .right {
+  right: -11px;
+}
+.home-index-slider .bamdik {
+  left: 3px;
 }

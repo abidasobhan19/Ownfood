@@ -15,12 +15,15 @@ import Item from "./new_Items/new_item";
 import Sidebar from "./slidebar/sidebar";
 import SlidingPane from "react-sliding-pane";
 import "react-sliding-pane/dist/react-sliding-pane.css";
+import DrawerLeft from "../Component/drawerLeft/drawerleft";
+import Shopping from "./shopping/shopping";
 const Main = () => {
   const { sticky, stickyRef } = useSticky();
   const [state, setState] = useState({
     isPaneOpen: false,
   });
   const [paneLeft, SetpanLeft] = useState(false);
+  console.log(paneLeft);
 
   return (
     <>
@@ -43,19 +46,25 @@ const Main = () => {
           isOpen={state.isPaneOpen}
           width="400px"
         >
-          onRequestClose={() => SetpanLeft(false)}
+          onRequestClose={() => setState({ paneLeft: false })}
           <Sidebar setState={setState} />
         </SlidingPane>
-        <SlidingPane
-          closeIcon={<div>Some div containing custom close icon.</div>}
-          isOpen={paneLeft}
-          title="Hey, it is optional pane title.  I can be React component too."
-          from="left"
-          width="200px"
-          onRequestClose={() => SetpanLeft(false)}
-        >
-          <div>And I am pane content on left.</div>
-        </SlidingPane>
+
+        <div style={{ zIndex: 1 }}>
+          <SlidingPane
+            closeIcon={
+              <div>
+                <i class="icofont-close"></i>
+              </div>
+            }
+            isOpen={paneLeft}
+            from="left"
+            width="400px"
+            onRequestClose={() => SetpanLeft(false)}
+          >
+            <DrawerLeft />
+          </SlidingPane>
+        </div>
       </div>
 
       <Slider />
@@ -63,6 +72,7 @@ const Main = () => {
       <Collection />
       <Item />
       <AllItem />
+      <Shopping />
       <Blog />
       <Footer />
     </>

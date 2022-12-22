@@ -11,7 +11,7 @@ function SampleNextArrow(props) {
   return (
     <div
       className="icofont-arrow-right dandik slick-arrow"
-      style={{ ...style, display: "block", right: 50 }}
+      style={{ ...style, display: "block", right: 33 }}
       onClick={onClick}
     />
   );
@@ -22,7 +22,7 @@ function SamplePrevArrow(props) {
   return (
     <div
       className="icofont-arrow-left bamdik slick-arrow"
-      style={{ ...style, display: "block" }}
+      style={{ ...style, display: "block", left: 33 }}
       onClick={onClick}
     />
   );
@@ -43,12 +43,12 @@ export default class MySlider extends Component {
       slidesToScroll: 1,
     };
     return (
-      <section className="home-index-slider slider-arrow slider-dots slick-initialized slick-slider">
-        <div>
+      <section className="home-index-slider slider-arrow slider-dots ">
+        <div style={{ width: "100%" }}>
           <Slider {...settings}>
             <div>
               <div
-                className=" banner-1  slick-current slick-active"
+                className=" "
                 data-slick-index="0"
                 aria-hidden="false"
                 tabIndex="0"
@@ -70,7 +70,7 @@ export default class MySlider extends Component {
 
             <div>
               <div
-                className=" banner-2 slick-slide slick-current slick-active"
+                className=" "
                 data-slick-index="0"
                 // aria-hidden="false"
                 // tabIndex="0"

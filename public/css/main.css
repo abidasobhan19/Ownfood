@@ -28,7 +28,7 @@
   --body: #f5f6f7;
   --border: #e8e8e8;
   --heading: #39404a;
-  --primary: #2b89e7;
+  --primary: #1b6dc1;
   --sub-heading: #565765;
   --green-chalk: #ddffd5;
   --green-dark: #072f17;
@@ -1520,6 +1520,7 @@ tbody tr td:last-child {
   }
 }
 .product-card {
+  margin-left: 10px;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -3702,6 +3703,7 @@ tbody tr td:last-child {
 .zip-form {
   width: 100%;
   /* margin: 4px 0px 3px; */
+  height: 44px;
   border-radius: 8px;
   background: var(--chalk);
   border: 2px solid var(--chalk);
@@ -3720,7 +3722,7 @@ tbody tr td:last-child {
   -ms-transition: all linear 0.3s;
   -o-transition: all linear 0.3s;
 }
-.zip-form:focus-within {
+.zip-form{
   background: var(--white);
   border-color: var(--primary);
 }
@@ -3728,7 +3730,7 @@ tbody tr td:last-child {
   width: 50%;
   height: 45px;
   font-size: 15px;
-  padding-left: 15px;
+  /* padding-left: 15px; */
 }
 .zip-form button i {
   width: 45px;
@@ -3868,6 +3870,7 @@ tbody tr td:last-child {
 }
 .navbar-link {
   /* padding: 20px 5px; */
+  font-size: 17px;
   font-weight: 700;
   color: var(--text);
   text-transform: capitalize;
@@ -5339,10 +5342,10 @@ tbody tr td:last-child {
   margin-right: 0px;
 }
 .footer-social li a {
-  width: 40px;
-  height: 40px;
+  width: 34px;
+  height: 33px;
   font-size: 16px;
-  line-height: 40px;
+  line-height: 35px;
   border-radius: 50%;
   text-align: center;
   color: var(--primary);
@@ -6148,7 +6151,8 @@ tbody tr td:last-child {
 
 
 .btnopen{
-
+  margin: 5px;
+  
     border: none;
     font-size: 15px;
     font-weight: 700;
@@ -6160,14 +6164,29 @@ tbody tr td:last-child {
     padding-left: 32px;
     border-radius: 6px;
     border: 2px solid var(--primary);
+   
+}
+.btn:focus-within {
+  background-color: #00acee;
+  border-color: rgba(184, 16, 114, 0.319);
 }
 
 .btnSign {
   border: none;
+ 
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
   padding: 5px 9px;
   border-radius: 6px;
   border: 2px solid var(--primary);
+}
+
+.slick-list {
+  margin: 0 -9px;
+}
+/* item */  
+.slick-slide
+{
+  padding: 0 9px;
 }

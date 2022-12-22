@@ -2,27 +2,37 @@ import React from "react";
 
 const Header = ({ SetpanLeft }) => {
   return (
-    <header className="header-part">
+    <header className="header-part shadow">
       <div className="container-fluid">
         <div className="header-content">
-          <a href="index.html" className="text-center col-md-6 col-lg-1 ">
+          <a className="text-center col-md-6 col-lg-1 ">
             <img
               src="images/logo.png"
               alt="logo"
               style={{ width: 100, height: 90, marginLeft: -20 }}
             />
 
-            <button onClick={() => SetpanLeft(true)}>
-              <i class="fas fa-bars "></i>
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                SetpanLeft(true);
+              }}
+              style={{
+                height: 40,
+                width: 40,
+                color: "#1b6dc1",
+              }}
+            >
+              <i class="fas fa-bars fa-lg "></i>
             </button>
           </a>
 
           <div className="d-flex justify-content-center align-items-end ">
-            <form className="zip-form">
+            <form className="zip-form ms-1">
               <input
                 type="text"
                 placeholder="Zip Code  "
-                style={{ width: 94 }}
+                style={{ width: 94, marginLeft: 5 }}
               />
 
               <button>
@@ -41,7 +51,7 @@ const Header = ({ SetpanLeft }) => {
             {/* <form className="header-form "></form> */}
           </div>
 
-          <nav class="nav" style={{ marginLeft: 120 }}>
+          <nav class="nav ms-3">
             <div class="container align-items-end">
               <div class="row">
                 <div class="col-lg-12">
@@ -49,13 +59,13 @@ const Header = ({ SetpanLeft }) => {
                     <ul class="navbar-list">
                       <li className="navbar-item">
                         <a class="navbar-link " href="#">
-                          Earn Money
+                          EARN MONEY
                         </a>
                       </li>
 
                       <li class="navbar-item dropdown">
                         <a class="navbar-link dropdown-arrow" href="#">
-                          All Food
+                          ALL FOOD
                         </a>
                         <ul class="dropdown-position-list">
                           <li>
@@ -84,33 +94,47 @@ const Header = ({ SetpanLeft }) => {
 
                       <li className="navbar-item">
                         <a class="navbar-link " href="#">
-                          Catering
+                          CATERING
                         </a>
                       </li>
 
                       <li className="navbar-item">
                         <a class="navbar-link " href="#">
-                          Faq
+                          FAQ
                         </a>
                       </li>
 
                       <li className="navbar-item">
                         <a class="navbar-link " href="#">
-                          Blog
+                          BLOG
                         </a>
                       </li>
 
-                      <button type="button" class="btnopen btn-primary">
+                      <button
+                        type="button"
+                        style={{ backgroundColor: "#1b6dc1" }}
+                        class="btnopen btn-primary"
+                      >
                         {" "}
                         <i class="fa-solid fa-right-to-bracket me-1"></i>
                         Open Your Account
                       </button>
 
-                      <button
+                      {/* <button
                         type="button"
                         class="btnSign btn-outline-primary ms-2"
                       >
                         <i class="fa-regular fa-user me-1"></i>
+                        Sign In
+                      </button> */}
+
+                      <button
+                        type="button"
+                        style={{ backgroundColor: "#1b6dc1" }}
+                        class="btnSign btn-primary"
+                      >
+                        {" "}
+                        <i class="fa-solid fa-right-to-bracket me-1"></i>
                         Sign In
                       </button>
                     </ul>

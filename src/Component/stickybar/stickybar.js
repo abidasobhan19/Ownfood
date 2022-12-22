@@ -24,6 +24,23 @@ const Stickybar = ({ setState }) => {
           {/* <div className="col-md-5 col-lg-3"></div> */}
 
           <div className="col-md-6 col-lg-6 mt-2 ms-auto header-widget-group justify-content-end">
+            <ul class="footer-social">
+              <li>
+                <a class="icofont-facebook" href="#"></a>
+              </li>
+              <li>
+                <a class="icofont-twitter" href="#"></a>
+              </li>
+              <li>
+                <a class="icofont-linkedin" href="#"></a>
+              </li>
+              <li>
+                <a class="icofont-instagram" href="#"></a>
+              </li>
+              <li>
+                <a class="icofont-pinterest" href="#"></a>
+              </li>
+            </ul>
             <button
               className="header-widget header-cart me-5"
               title="Cartlist"
