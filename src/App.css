@@ -2,8 +2,8 @@
 
 .sticky  {
   position: fixed;
-  left: 0;      /* ADDED */
-  top: 0;       /* ADDED */
-  width: 100%;  /* ADDED */
+  left: 0;      
+  top: 0;       
+  width: 100%;  
   z-index: 1;
 }

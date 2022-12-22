@@ -1,88 +1,97 @@
-import React from "react";
-import { Box, Typography } from "@mui/material";
-import "./slider.css";
+import React, { Component } from "react";
 import Slider from "react-slick";
-import Bg from "../../assets/img/slider.jpg";
-import Bg2 from "../../assets/img/slider2.jpg";
-import Custom_Search from "../Search_Bar_OnSlider/custom_Search";
+import Sone from "../../assets/img/SLIDE_01.jpg";
+import Stwo from "../../assets/img/SLIDE_03.jpg";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const MySlider = () => {
-  const settings = {
-    // dots: true,
-    fade: true,
-    // infinite: true,
-    autoplay: true,
-    speed: 5000,
-    // slidesToShow: 1,
-    // slidesToScroll: 1,
-    pauseOnHover: true,
-  };
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
   return (
-    <Box>
-      <div style={{ width: "100%", height: 600, overflow: "hidden" }}>
-        <Slider {...settings}>
-          {/* <div id="overlay"> */}
-          <div
-            class="image-wrap"
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              width: "100%",
-            }}
-          >
-            <div class="text">
-              <Typography variant="h1"> Hello Own Food</Typography>
-            </div>
-            <img
-              class="overlay"
-              src={
-                "http://fitmeal.like-themes.com/wp-content/uploads/2018/02/SLIDE_01.jpg"
-              }
-            />
-          </div>
-          <div
-            class="image-wrap"
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              width: "100%",
-            }}
-          >
-            <div class="text">
-              <Typography variant="h1"> Hello Own Drink</Typography>
-            </div>
-            <img
-              class="overlay"
-              src={
-                "http://fitmeal.like-themes.com/wp-content/uploads/2018/02/SLIDE_02.jpg"
-              }
-            />
-          </div>
-          <div
-            class="image-wrap"
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              width: "100%",
-            }}
-          >
-            <div class="text">
-              <Typography variant="h1"> Welcome Own Food</Typography>
-            </div>
-            <img
-              class="overlay"
-              src={
-                "http://fitmeal.like-themes.com/wp-content/uploads/2018/02/SLIDE_03.jpg"
-              }
-            />
-          </div>
-          {/* </div> */}
-        </Slider>
-      </div>
-    </Box>
+    <div
+      className="icofont-arrow-right dandik slick-arrow"
+      style={{ ...style, display: "block", right: 50 }}
+      onClick={onClick}
+    />
   );
-};
+}
 
-export default MySlider;
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className="icofont-arrow-left bamdik slick-arrow"
+      style={{ ...style, display: "block" }}
+      onClick={onClick}
+    />
+  );
+}
+
+export default class MySlider extends Component {
+  render() {
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      autoplay: true,
+      nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />,
+      autoplaySpeed: 5000,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    };
+    return (
+      <section className="home-index-slider slider-arrow slider-dots slick-initialized slick-slider">
+        <div>
+          <Slider {...settings}>
+            <div>
+              <div
+                className=" banner-1  slick-current slick-active"
+                data-slick-index="0"
+                aria-hidden="false"
+                tabIndex="0"
+                style={{
+                  width: "100%",
+                  height: 500,
+                  position: "relative",
+
+                  // left: 0,
+                  // top: 0,
+                  opacity: 1,
+                }}
+              >
+                <div className="container-fluid">
+                  <img src={Sone} style={{ width: "100%" }} alt="index" />
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div
+                className=" banner-2 slick-slide slick-current slick-active"
+                data-slick-index="0"
+                // aria-hidden="false"
+                // tabIndex="0"
+                style={{
+                  width: "100%",
+                  position: "relative",
+                  height: 500,
+                  // zIndex: 999,
+                  // left: 0,
+                  // top: 0,
+                  opacity: 1,
+                }}
+              >
+                <div className="container-fluid">
+                  <img src={Stwo} style={{ width: "100%" }} alt="index" />
+                </div>
+              </div>
+            </div>
+          </Slider>
+        </div>
+      </section>
+    );
+  }
+}

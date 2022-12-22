@@ -1,53 +1,71 @@
-import React from "react";
-import { Box } from "@mui/material";
+import React, { useState } from "react";
 import classNames from "classnames";
-import Appbar from "./TopBar/appbar";
-import TopBar_wrap from "./Sticky_Bar/topWrap";
-import StickyBar from "./Sticky_Bar/sticky";
+import useSticky from "./sticky";
+
+import Stickybar from "./stickybar/stickybar";
 import "../App.css";
-import Slider from "./Slider/slider";
+import Slider from "./slider/slider";
+import Header from "./navbar/header";
+import Collection from "./collection/collection";
+import Footer from "./footer/footer";
+import Blog from "./Blog/blog";
+import AllItem from "./allItems/allItem";
 import Custom_Search from "./Search_Bar_OnSlider/custom_Search";
-import Earn_money from "./earn_money/earn_money";
-import Cuisine from "./cuisine/cuisine";
-import Work from "./how_its_work/works";
-import "./main.css";
-// import ItemList from "./item/itemList";
+import Item from "./new_Items/new_item";
+import Sidebar from "./slidebar/sidebar";
+import SlidingPane from "react-sliding-pane";
+import "react-sliding-pane/dist/react-sliding-pane.css";
 const Main = () => {
-  const { sticky, stickyRef } = TopBar_wrap();
+  const { sticky, stickyRef } = useSticky();
+  const [state, setState] = useState({
+    isPaneOpen: false,
+  });
+  const [paneLeft, SetpanLeft] = useState(false);
+
   return (
-    <Box>
-      {/* <Appbar /> */}
-      <>
-        <header className="header" style={{ backgroundColor: "white" }}>
-          <StickyBar />
-        </header>
-        <nav ref={stickyRef} className={classNames("nav", { sticky })}>
-          <Box style={{ width: "100%" }}>
-            <Appbar />
-          </Box>
-        </nav>
-        <div
-          style={{
-            height: sticky ? `${stickyRef.current?.clientHeight}px` : "0px",
-            // backgroundColor: "#F4F5ED",
-          }}
-        />
+    <>
+      <header className="header">
+        <Stickybar setState={setState} />
+      </header>
+      <nav ref={stickyRef} className={classNames("Static_Menu", { sticky })}>
+        <Header SetpanLeft={SetpanLeft} />
+      </nav>
+      <div
+        style={{
+          height: sticky ? `${stickyRef.current?.clientHeight}px` : "0px",
+        }}
+      />
 
-        <Slider />
-        <Custom_Search />
-        <Box style={{ marginLeft: 10, backgroundColor: "#f3f5ed" }}>
-          <Earn_money />
-        </Box>
+      <div>
+        <SlidingPane
+          className="some-custom-class"
+          overlayClassName="some-custom-overlay-class"
+          isOpen={state.isPaneOpen}
+          width="400px"
+        >
+          onRequestClose={() => SetpanLeft(false)}
+          <Sidebar setState={setState} />
+        </SlidingPane>
+        <SlidingPane
+          closeIcon={<div>Some div containing custom close icon.</div>}
+          isOpen={paneLeft}
+          title="Hey, it is optional pane title.  I can be React component too."
+          from="left"
+          width="200px"
+          onRequestClose={() => SetpanLeft(false)}
+        >
+          <div>And I am pane content on left.</div>
+        </SlidingPane>
+      </div>
 
-        <Box class="wrap">
-          <Work />
-        </Box>
-
-        <Box style={{ margin: 20, marginTop: -40 }}>
-          <Cuisine />
-        </Box>
-      </>
-    </Box>
+      <Slider />
+      <Custom_Search />
+      <Collection />
+      <Item />
+      <AllItem />
+      <Blog />
+      <Footer />
+    </>
   );
 };
 
