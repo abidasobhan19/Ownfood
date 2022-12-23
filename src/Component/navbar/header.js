@@ -19,7 +19,7 @@ const Header = ({ SetpanLeft }) => {
               }}
               style={{
                 height: 40,
-                width: 40,
+                // width: 40,
                 color: "#1b6dc1",
               }}
             >
@@ -51,7 +51,7 @@ const Header = ({ SetpanLeft }) => {
             {/* <form className="header-form "></form> */}
           </div>
 
-          <nav class="nav ms-3 bg-white">
+          <nav class="nav  bg-white">
             <div class="container align-items-end">
               <div class="row">
                 <div class="col-lg-12">

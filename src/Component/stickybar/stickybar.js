@@ -12,12 +12,12 @@ const Stickybar = ({ setState }) => {
                   class="fas fa-phone-volume me-2"
                   style={{ color: "white" }}
                 ></i>
-                +49260-5731-08
+                +*801717260783
               </p>
 
               <p style={{ color: "white" }}>
                 <i class="fas fa-envelope me-2" style={{ color: "white" }}></i>
-                support@fitmeal.us
+                support@ownfood.com
               </p>
             </div>
           </div>
