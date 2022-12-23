@@ -48,8 +48,7 @@ const Blog = () => {
                       </ul>
                       <h4 class="blog-title  text-center">
                         <a href="" tabIndex="-1">
-                          Voluptate blanditiis provident Lorem ipsum dolor sit
-                          amet
+                          Instant Food
                         </a>
                       </h4>
                       <p class="blog-desc">
@@ -92,8 +91,7 @@ const Blog = () => {
                       </ul>
                       <h4 class="blog-title text-center">
                         <a href="" tabIndex="-1">
-                          Voluptate blanditiis provident Lorem ipsum dolor sit
-                          amet
+                          Pre-Order Food
                         </a>
                       </h4>
                       <p class="blog-desc">
@@ -135,8 +133,7 @@ const Blog = () => {
                       </ul>
                       <h4 class="blog-title  text-center">
                         <a href="" tabIndex="-1">
-                          Voluptate blanditiis provident Lorem ipsum dolor sit
-                          amet
+                          Wish Food
                         </a>
                       </h4>
                       <p class="blog-desc">
@@ -178,8 +175,7 @@ const Blog = () => {
                       </ul>
                       <h4 class="blog-title  text-center">
                         <a href="" tabIndex="-1">
-                          Voluptate blanditiis provident Lorem ipsum dolor sit
-                          amet
+                          Catering Food
                         </a>
                       </h4>
                       <p class="blog-desc">

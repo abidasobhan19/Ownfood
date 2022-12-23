@@ -46,7 +46,7 @@ const Collection = () => {
       <div class="row">
         <div class="col">
           <div class="section-heading mt-5">
-            <h2>Popular Dishes</h2>
+            <h2>Instant Food</h2>
           </div>
         </div>
       </div>

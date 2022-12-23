@@ -51,12 +51,12 @@ const Header = ({ SetpanLeft }) => {
             {/* <form className="header-form "></form> */}
           </div>
 
-          <nav class="nav ms-3">
+          <nav class="nav ms-3 bg-white">
             <div class="container align-items-end">
               <div class="row">
                 <div class="col-lg-12">
                   <div class="navbar-content">
-                    <ul class="navbar-list">
+                    <ul class="navbar-list bg-white">
                       <li className="navbar-item">
                         <a class="navbar-link " href="#">
                           EARN MONEY

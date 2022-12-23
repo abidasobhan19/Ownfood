@@ -17,6 +17,9 @@ import SlidingPane from "react-sliding-pane";
 import "react-sliding-pane/dist/react-sliding-pane.css";
 import DrawerLeft from "../Component/drawerLeft/drawerleft";
 import Shopping from "./shopping/shopping";
+import Brand from "./Brand/brand";
+import Work from "./how_it_works/work";
+import Earn_Money from "./Earn_money_with_us/earn_money";
 const Main = () => {
   const { sticky, stickyRef } = useSticky();
   const [state, setState] = useState({
@@ -69,10 +72,13 @@ const Main = () => {
 
       <Slider />
       <Custom_Search />
+      <Brand />
+      <Earn_Money />
+      {/* <Work /> */}
       <Collection />
       <Item />
       <AllItem />
-      <Shopping />
+      {/* <Shopping /> */}
       <Blog />
       <Footer />
     </>

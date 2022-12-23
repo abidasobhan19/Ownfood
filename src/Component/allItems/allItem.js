@@ -7,7 +7,7 @@ const AllItem = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="section-heading">
-              <h2>Browse by Top Niche</h2>
+              <h2>Browse by Popular Item</h2>
             </div>
           </div>
         </div>
