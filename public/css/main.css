@@ -3964,7 +3964,7 @@ tbody tr td:last-child {
     display: none;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1449px) {
   .navbar-list li {
     margin-right: 18px;
   }
