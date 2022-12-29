@@ -1,8 +1,54 @@
-import Main from "./Component/main";
+import Main from "./layout/main";
+import ProductDetail from "./Component/productDetailpage/ProductsDetails";
+import Home from "./Component/main";
+import Shopping from "./Component/shopping/shopping";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+} from "react-router-dom";
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: (
+        <div>
+          <Main />
+        </div>
+      ),
+      children: [
+        {
+          path: "/",
+          element: (
+            <div>
+              <Home />
+            </div>
+          ),
+        },
+        {
+          path: "/productdetails",
+          element: (
+            <div>
+              <ProductDetail />
+            </div>
+          ),
+        },
+        {
+          path: "/shoppingpage",
+          element: (
+            <div>
+              <Shopping />
+            </div>
+          ),
+        },
+      ],
+    },
+  ]);
+
   return (
     <div className="App">
-      <Main />
+      <RouterProvider router={router} />
     </div>
   );
 }

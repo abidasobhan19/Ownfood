@@ -1,0 +1,205 @@
+.upper{
+    width: 400px;
+    height: 400px;
+    border: 1px dashed #ccc;
+    background-color: #1b6dc1;
+    position:relative;
+
+    z-index: 1;
+    /* margin: auto;
+    top:0; bottom:0; left:0;right:0; */
+    border-radius: 50%;
+
+}
+/* .half-path{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  
+    background-color: rebeccapurple;
+    clip-path: polygon(0 45%, 100% 100%, 100% 0);
+    position: relative;
+    z-index: 4;
+    top: 30%;
+    right: -50%;
+} */
+.main{
+    background-color: white;
+    /* z-index: -7; */
+    z-index: 3;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    margin: auto;
+    position:absolute;
+    top:0; bottom:0; left:0;right:0;
+    border-radius: 50%;
+}
+.name{
+    position:relative;
+
+    top: 45%;
+    bottom: 50%;
+    left: 38%;
+    font-size: medium;
+    font-weight: 900;
+    /* right: 50%; */
+    margin: auto;
+    overflow: hidden;
+
+}
+.img0{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    position:absolute;
+    top:0; bottom:0; left:0;right:0;
+    overflow:hidden;
+    z-index: 0;
+    margin:auto;
+    animation: circle6 20s linear infinite;
+    /* animation-delay: 1s; */
+    border: 5px solid rgb(243, 246, 247);
+}
+.img0:hover{
+  box-shadow: 0 0 5px rgb(236, 237, 237);
+  border: 3px solid rgb(234, 234, 234);
+}
+.img1{
+    width:80px;
+    height:80px;
+
+    border-radius:50%;
+    position:absolute;
+    top:0; bottom:0; left:0;right:0;
+    overflow:hidden;
+    margin:auto;
+    animation: circle6 20s linear infinite;
+    animation-delay: 2s;
+    border: 5px solid rgb(243, 246, 247);
+}
+.img1:hover{
+  box-shadow: 0 0 5px rgb(236, 237, 237);
+  border: 3px solid rgb(234, 234, 234);
+}
+.img2{
+    width:80px;
+    height:80px;
+
+    border-radius:50%;
+    position:absolute;
+    top:0; bottom:0; left:0;right:0;
+    overflow:hidden;
+    margin:auto;
+    animation: circle6 20s linear infinite;
+    animation-delay: 4s;
+    border: 5px solid rgb(243, 246, 247);
+    
+}
+
+.img2:hover{
+  box-shadow: 0 0 5px rgb(236, 237, 237);
+  border: 3px solid rgb(234, 234, 234);
+}
+.upper:hover *{
+  -webkit-animation-play-state:paused;
+  -moz-animation-play-state:paused;
+  -o-animation-play-state:paused;
+  animation-play-state:paused;
+}
+.img3{
+    width:80px;
+    height:80px;
+
+    border-radius:50%;
+    position:absolute;
+    top:0; bottom:0; left:0;right:0;
+    overflow:hidden;
+    margin:auto;
+    animation: circle6 20s linear infinite;
+    animation-delay: 6s;
+    border: 5px solid rgb(243, 246, 247);
+}
+.img3:hover{
+  box-shadow: 0 0 5px rgb(236, 237, 237);
+  border: 3px solid rgb(234, 234, 234);
+}
+.img4{
+    width:80px;
+    height:80px;
+
+    border-radius:50%;
+    position:absolute;
+    top:0; bottom:0; left:0;right:0;
+    overflow:hidden;
+    margin:auto;
+    animation: circle6 20s linear infinite;
+    animation-delay: 8s;
+    border: 5px solid rgb(243, 246, 247);
+}
+.img4:hover{
+  box-shadow: 0 0 5px rgb(236, 237, 237);
+  border: 3px solid rgb(234, 234, 234);
+}
+.img5{
+    width:80px;
+    height:80px;
+
+    border-radius:50%;
+    position:absolute;
+    top:0; bottom:0; left:0;right:0;
+    overflow:hidden;
+    margin:auto;
+    animation: circle6 20s linear infinite;
+    animation-delay: 10s;
+    border: 5px solid rgb(243, 246, 247);
+}
+.img5:hover{
+  box-shadow: 0 0 5px rgb(236, 237, 237);
+  border: 3px solid rgb(234, 234, 234);
+}
+.img6{
+    width:80px;
+    height:80px;
+
+    border-radius:50%;
+    position:absolute;
+    top:0; bottom:0; left:0;right:0;
+    overflow:hidden;
+    margin:auto;
+    animation: circle6 20s linear infinite;
+    animation-delay: 12s;
+    border: 5px solid rgb(243, 246, 247);
+}
+.img6:hover{
+  box-shadow: 0 0 5px rgb(236, 237, 237);
+  border: 3px solid rgb(234, 234, 234);
+}
+
+   @keyframes circle6{
+    0%{
+      transform:rotate(0deg)
+                translate(150px)
+                rotate(0deg);
+    
+    }
+    100%{
+      transform:rotate(-360deg)
+                translate(150px)
+                rotate(360deg);
+    }
+   }
+   .try{
+    clip-path: polygon(0 45%, 100% 100%, 100% 0);
+    background-color: rgb(255, 255, 255);
+    height: 104px;
+    width: 143px;
+    z-index:4 ;
+    position: relative;
+    box-shadow:   50px 20px 60px #bebebe;
+    
+    top: 40%;
+    right: -70%;
+   }
+ 
+  

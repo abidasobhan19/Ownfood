@@ -6,16 +6,16 @@ const Stickybar = ({ setState }) => {
       <div className="container-fluid">
         <div className="row">
           <div class="col-md-6 col-lg-6">
-            <div className="col-md-6 col-lg-6 mt-1 d-flex justify-content-between  ">
-              <p className="ms-4" style={{ color: "white" }}>
+            <div className="d-flex mt-2">
+              <p className="" style={{ color: "white" }}>
                 <i
                   class="fas fa-phone-volume me-2"
                   style={{ color: "white" }}
                 ></i>
-                +*801717260783
+                +8801717260783
               </p>
 
-              <p style={{ color: "white" }}>
+              <p className="ms-2" style={{ color: "white" }}>
                 <i class="fas fa-envelope me-2" style={{ color: "white" }}></i>
                 support@ownfood.com
               </p>
@@ -42,7 +42,7 @@ const Stickybar = ({ setState }) => {
               </li>
             </ul>
             <button
-              className="header-widget header-cart me-5"
+              className="header-widget header-cart "
               title="Cartlist"
               onClick={() => {
                 setState({ isPaneOpen: true });

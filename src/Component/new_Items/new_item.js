@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./new.css";
 import { foodItem } from "../data";
 import ShoppingPopUp from "../popup/popUpView";
+import { useNavigate } from "react-router-dom";
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -27,6 +28,7 @@ function SamplePrevArrow(props) {
   );
 }
 const New_Item = () => {
+  const navigate = useNavigate();
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -55,7 +57,7 @@ const New_Item = () => {
       <div style={{ width: "99%" }}>
         <Slider {...settings}>
           <div>
-            <div class="product-card">
+            <div class="product-card shadow">
               <div class="product-media">
                 <div class="product-label">
                   <label class="label-text new">new</label>
@@ -95,7 +97,12 @@ const New_Item = () => {
                     (3)
                   </a>
                 </div>
-                <h6 class="product-name">
+                <h6
+                  class="product-name"
+                  onClick={() => {
+                    navigate("productdetails");
+                  }}
+                >
                   <a href="#" tabIndex="-1">
                     {foodItem[0].item_name}
                   </a>
@@ -139,7 +146,7 @@ const New_Item = () => {
           </div>
 
           <div>
-            <div class="product-card">
+            <div class="product-card shadow">
               <div class="product-media">
                 <div class="product-label">
                   <label class="label-text new">new</label>
@@ -179,7 +186,12 @@ const New_Item = () => {
                     (3)
                   </a>
                 </div>
-                <h6 class="product-name">
+                <h6
+                  class="product-name"
+                  onClick={() => {
+                    navigate("productdetails");
+                  }}
+                >
                   <a href="#" tabIndex="-1">
                     {foodItem[1].item_name}
                   </a>
@@ -223,7 +235,7 @@ const New_Item = () => {
           </div>
 
           <div>
-            <div class="product-card">
+            <div class="product-card shadow">
               <div class="product-media">
                 <div class="product-label">
                   <label class="label-text new">new</label>
@@ -263,7 +275,12 @@ const New_Item = () => {
                     (3)
                   </a>
                 </div>
-                <h6 class="product-name">
+                <h6
+                  class="product-name"
+                  onClick={() => {
+                    navigate("productdetails");
+                  }}
+                >
                   <a href="#" tabIndex="-1">
                     {foodItem[2].item_name}
                   </a>
@@ -307,7 +324,7 @@ const New_Item = () => {
           </div>
 
           <div>
-            <div class="product-card">
+            <div class="product-card shadow">
               <div class="product-media">
                 <div class="product-label">
                   <label class="label-text new">new</label>
@@ -347,7 +364,12 @@ const New_Item = () => {
                     (3)
                   </a>
                 </div>
-                <h6 class="product-name">
+                <h6
+                  class="product-name"
+                  onClick={() => {
+                    navigate("productdetails");
+                  }}
+                >
                   <a href="#" tabIndex="-1">
                     {foodItem[2].item_name}
                   </a>
@@ -391,7 +413,7 @@ const New_Item = () => {
           </div>
 
           <div>
-            <div class="product-card">
+            <div class="product-card shadow">
               <div class="product-media">
                 <div class="product-label">
                   <label class="label-text new">new</label>
@@ -431,7 +453,12 @@ const New_Item = () => {
                     (3)
                   </a>
                 </div>
-                <h6 class="product-name">
+                <h6
+                  class="product-name"
+                  onClick={() => {
+                    navigate("productdetails");
+                  }}
+                >
                   <a href="#" tabIndex="-1">
                     {foodItem[4].item_name}
                   </a>
@@ -475,7 +502,7 @@ const New_Item = () => {
           </div>
 
           <div>
-            <div class="product-card">
+            <div class="product-card shadow">
               <div class="product-media">
                 <div class="product-label">
                   <label class="label-text new">new</label>
@@ -515,7 +542,12 @@ const New_Item = () => {
                     (3)
                   </a>
                 </div>
-                <h6 class="product-name">
+                <h6
+                  class="product-name"
+                  onClick={() => {
+                    navigate("productdetails");
+                  }}
+                >
                   <a href="#" tabIndex="-1">
                     {foodItem[5].item_image}
                   </a>
@@ -646,7 +678,7 @@ const New_Item = () => {
           </div> */}
 
           <div>
-            <div class="product-card">
+            <div class="product-card shadow">
               <div class="product-media">
                 <div class="product-label">
                   <label class="label-text new">new</label>
@@ -686,7 +718,12 @@ const New_Item = () => {
                     (3)
                   </a>
                 </div>
-                <h6 class="product-name">
+                <h6
+                  class="product-name"
+                  onClick={() => {
+                    navigate("productdetails");
+                  }}
+                >
                   <a href="#" tabIndex="-1">
                     {foodItem[0].item_name}
                   </a>
@@ -730,7 +767,7 @@ const New_Item = () => {
           </div>
 
           <div>
-            <div class="product-card">
+            <div class="product-card shadow">
               <div class="product-media">
                 <div class="product-label">
                   <label class="label-text new">new</label>
@@ -770,7 +807,12 @@ const New_Item = () => {
                     (3)
                   </a>
                 </div>
-                <h6 class="product-name">
+                <h6
+                  class="product-name"
+                  onClick={() => {
+                    navigate("productdetails");
+                  }}
+                >
                   <a href="#" tabIndex="-1">
                     {foodItem[2].item_name}
                   </a>

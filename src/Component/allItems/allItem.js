@@ -1,6 +1,8 @@
 import React from "react";
 import { foodItem } from "../data";
+import { useNavigate } from "react-router-dom";
 const AllItem = () => {
+  const navigate = useNavigate();
   return (
     <section className="section niche-part">
       <div className="container-fluid">
@@ -1918,7 +1920,13 @@ const AllItem = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="section-btn-25">
-              <a href="#" className="btn btn-outline">
+              <a
+                onClick={() => {
+                  navigate("shoppingpage");
+                }}
+                href="#"
+                className="btn btn-outline"
+              >
                 <i className="fas fa-eye"></i>
                 <span>show more</span>
               </a>

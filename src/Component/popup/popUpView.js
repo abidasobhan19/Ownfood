@@ -8,7 +8,7 @@ const ShoppingPopUp = ({ show, handleClose }) => {
         show={show}
         onHide={handleClose}
         animation={false}
-        backdrop="static"
+        // backdrop="static"
         size="xl"
       >
         <Modal.Header closeButton>
@@ -153,14 +153,14 @@ const ShoppingPopUp = ({ show, handleClose }) => {
             </div>
           </div>
         </Modal.Body>
-        <Modal.Footer>
+        {/* <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
           <Button variant="primary" onClick={handleClose}>
             Save Changes
           </Button>
-        </Modal.Footer>
+        </Modal.Footer> */}
       </Modal>
     </div>
   );

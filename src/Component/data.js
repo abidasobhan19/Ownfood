@@ -5,6 +5,18 @@ import Nachos from "../assets/img/nachos.png";
 import Pizza from "../assets/img/pizza.png";
 import Roll_Chicken from "../assets/img/roll_chicken.png";
 
+import UberOne from "../assets/img/uber_Image/asian.png";
+import Ubertwo from "../assets/img/uber_Image/uber_Img.png";
+
+import Uberthree from "../assets/img/uber_Image/coffeeandtea.png";
+import Uberfour from "../assets/img/uber_Image/convenience.png";
+import Uberfive from "../assets/img/uber_Image/fastfood.png";
+import Ubersix from "../assets/img/uber_Image/indian.png";
+import Uberseven from "../assets/img/uber_Image/italian.png";
+import Ubereight from "../assets/img/uber_Image/seafood.png";
+import Ubernine from "../assets/img/uber_Image/top_eats.png";
+import Uberten from "../assets/img/uber_Image/uber_grocery.png";
+
 export const foodItem = [
   {
     item_name: "Barger",
@@ -29,5 +41,48 @@ export const foodItem = [
   {
     item_name: "Roll Chicken",
     item_image: Roll_Chicken,
+  },
+];
+
+export const Uber_image = [
+  {
+    item_name: "Asian",
+    item_image: UberOne,
+  },
+  {
+    item_name: "Name",
+    item_image: Ubertwo,
+  },
+  {
+    item_name: "Coffee & Tea",
+    item_image: Uberthree,
+  },
+  {
+    item_name: "Convenience",
+    item_image: Uberfour,
+  },
+  {
+    item_name: "FastFood",
+    item_image: Uberfive,
+  },
+  {
+    item_name: "Indian",
+    item_image: Ubersix,
+  },
+  {
+    item_name: "Italian",
+    item_image: Uberseven,
+  },
+  {
+    item_name: "SeaFood",
+    item_image: Ubereight,
+  },
+  {
+    item_name: "Top Eats",
+    item_image: Ubernine,
+  },
+  {
+    item_name: "Grocery",
+    item_image: Uberten,
   },
 ];

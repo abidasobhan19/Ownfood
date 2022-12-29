@@ -5,18 +5,20 @@ import Icon from "../../assets/img/step-3.png";
 const Earn_Money = () => {
   return (
     <section
-      className="bd-step__area "
+      className="bd-step__area shadow-lg"
       style={{
         // marginTop: -50,
         backgroundColor: "white",
-        padding: 40,
+        paddingTop: 40,
+        paddingBottom: 40,
+        // padding: 40,
       }}
     >
       <div className="container-fluid">
         <div className="row justify-content-center">
           <div className="col-xl-6 col-lg-7 col-md-8">
             {/* <div className="bd-section__title-wrapper p-relative mb-85"></div> */}
-            <h1 className="text-center "> Earn Money With Us</h1>
+            <h2 className="text-center "> EARN MONEY WITH US</h2>
           </div>
         </div>
         <div className="row mt-5">

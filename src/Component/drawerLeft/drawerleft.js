@@ -19,7 +19,7 @@ export default function BasicList() {
               <ListItemIcon>
                 <InboxIcon />
               </ListItemIcon>
-              <ListItemText primary="Inbox" />
+              <ListItemText primary="Earn Money" />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
@@ -27,7 +27,7 @@ export default function BasicList() {
               <ListItemIcon>
                 <DraftsIcon />
               </ListItemIcon>
-              <ListItemText primary="Drafts" />
+              <ListItemText primary="All Food" />
             </ListItemButton>
           </ListItem>
         </List>
@@ -36,13 +36,18 @@ export default function BasicList() {
       <nav aria-label="secondary mailbox folders">
         <List>
           <ListItem disablePadding>
-            <ListItemButton>
-              <ListItemText primary="Trash" />
+            <ListItemButton component="a" href="#simple-list">
+              <ListItemText primary="Catering" />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
             <ListItemButton component="a" href="#simple-list">
-              <ListItemText primary="Spam" />
+              <ListItemText primary="Blog" />
+            </ListItemButton>
+          </ListItem>{" "}
+          <ListItem disablePadding>
+            <ListItemButton component="a" href="#simple-list">
+              <ListItemText primary="Faq" />
             </ListItemButton>
           </ListItem>
         </List>

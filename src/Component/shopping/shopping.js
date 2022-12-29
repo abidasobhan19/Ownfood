@@ -1,8 +1,21 @@
 import React from "react";
+import './shopping.css'
+import { useState } from 'react';
 import { foodItem } from "../data";
 const Shoping = () => {
+  const [column, setColumn] = useState('12');
+  console.log(column)
   return (
     <div>
+      <section class="inner-section single-banner bannerstyle" >
+        <div class="container text-white">
+            <h2>Shop 1 Column</h2>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a>Home</a></li>
+        <li className='ms-2'>Shop content 1</li>
+            </ol>
+        </div>
+    </section>
       <section class="inner-section shop-part">
         <div class="container">
           <div class="row content-reverse">
@@ -342,25 +355,142 @@ const Shoping = () => {
                       </select>
                     </div>
                     <div class="filter-action">
-                      <a href="shop-3column.html" title="Three Column">
+                      {/* <a href="shop-3column.html" title="Three Column">
                         <i class="fas fa-th"></i>
-                      </a>
-                      <a href="shop-2column.html" title="Two Column">
+                      </a> */}
+                      <div onClick={() => setColumn('6')} title="Two Column">
                         <i class="fas fa-th-large"></i>
-                      </a>
-                      <a
-                        href="shop-1column.html"
-                        class="active"
+
+                      </div>
+                      <div
+
+                        className='mx-2'
                         title="One Column"
+                        onClick={() => setColumn('12')}
                       >
                         <i class="fas fa-th-list"></i>
-                      </a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="row">
-                <div class="col">
+                {
+                  column === '12' && foodItem.map(item => <div className={`col-${column}`}>
+                    <div class="product-standard">
+                      <div class="standard-label-group">
+                        <label class="standard-label off">-15%</label>
+                      </div>
+                      <div class="standard-media">
+                        <a class="standard-image" href="product-video.html">
+                          <img src={foodItem[1].item_image} alt="product" />
+                        </a>
+                        <div class="standard-widget">
+                          <a
+                            title="Product View"
+                            href="#"
+                            class="fas fa-eye"
+                            data-bs-toggle="modal"
+                            data-bs-target="#product-view"
+                          ></a>
+                        </div>
+                      </div>
+                      <div class="standard-content">
+                        <h4 class="standard-name">
+                          <a>fresh green chilis</a>
+                        </h4>
+                        <h5 class="standard-price">
+                          <del>$34</del>
+                          <span>
+                            $28<small>/piece</small>
+                          </span>
+                        </h5>
+                        <div class="standard-rating">
+                          <i class="active icofont-star"></i>
+                          <i class="active icofont-star"></i>
+                          <i class="active icofont-star"></i>
+                          <i class="active icofont-star"></i>
+                          <i class="icofont-star"></i>
+                          <a>(3)</a>
+                        </div>
+                        <p class="standard-desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit
+                          molestias quaerat rem ullam ut nam quibusdam labore sed
+                          magnam eos Inventore quis corrupti nemo ipsa ratione
+                          culpa porro vitae.
+                        </p>
+                        <div class="standard-action-group">
+                          <button class="product-add" title="Add to Cart">
+                            <i class="fas fa-shopping-basket"></i>
+                            <span>add to cart</span>
+                          </button>
+                          <div class="product-action">
+                            <button class="action-minus" title="Quantity Minus">
+                              <i class="icofont-minus"></i>
+                            </button>
+                            <input
+                              class="action-input"
+                              title="Quantity Number"
+                              type="text"
+                              name="quantity"
+                              value="1"
+                            />
+                            <button class="action-plus" title="Quantity Plus">
+                              <i class="icofont-plus"></i>
+                            </button>
+                          </div>
+                          <button
+                            class="standard-wish wish"
+                            title="Add to Wishlist"
+                          >
+                            <i class="fas fa-heart"></i>
+                            <span>add to wish</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>)
+
+
+
+                }
+                {
+                  column === '6' && foodItem.map(item =>
+                   <div class="col-4">
+                    <div class="product-card">
+                      <div class="product-media">
+                        <div class="product-label"><label class="label-text new">new</label></div><button
+                          class="product-wish wish"><i class="fas fa-heart"></i></button><a
+                            class="product-image"><img src={foodItem[1].item_image}
+                              alt="product" /></a>
+                        <div class="product-widget">
+                          <a title="Product View"
+                            className="fas fa-eye" data-bs-toggle="modal"
+                            data-bs-target="#product-view"></a></div>
+                      </div>
+                      <div class="product-content">
+                        <div class="product-rating"><i class="active icofont-star"></i><i
+                          class="active icofont-star"></i><i class="active icofont-star"></i><i
+                            class="active icofont-star"></i><i class="icofont-star"></i><a
+                              href="product-video.html">(3)</a></div>
+                        <h6 class="product-name">burger</h6>
+                        <h6 class="product-price"><del>$150</del><span>120<small>/piece</small></span></h6>
+                        <button class="product-add" title="Add to Cart"><i
+                          class="fas fa-shopping-basket"></i><span>add</span></button>
+                        <div class="product-action"><button class="action-minus" title="Quantity Minus"><i
+                          class="icofont-minus"></i></button><input class="action-input"
+                            title="Quantity Number" type="text" name="quantity" value="1" /><button
+                              class="action-plus" title="Quantity Plus"><i
+                                class="icofont-plus"></i></button>
+
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>)
+                }
+                {/* <div class="col-6">
                   <div class="product-standard">
                     <div class="standard-label-group">
                       <label class="standard-label off">-15%</label>
@@ -434,7 +564,7 @@ const Shoping = () => {
                     </div>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col-6">
                   <div class="product-standard">
                     <div class="standard-label-group">
                       <label class="standard-label new">new</label>
@@ -508,7 +638,7 @@ const Shoping = () => {
                     </div>
                   </div>
                 </div>
-                <div class="col">
+                <div class="col-6">
                   <div class="product-standard">
                     <div class="standard-label-group">
                       <label class="standard-label sale">sale</label>
@@ -936,7 +1066,7 @@ const Shoping = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
               <div class="row">
                 <div class="col-lg-12">

@@ -2,43 +2,43 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer class="footer-part bg-dark">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-6 col-xl-4">
-            <div class="footer-widget">
-              <a class="footer-logo text-center" href="#">
+    <footer className="footer-part bg-dark">
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-sm-6 col-xl-4">
+            <div className="footer-widget">
+              <a className="footer-logo " href="#">
                 <img src="images/logo.png" alt="logo" />
               </a>
-              <p class="footer-desc " style={{ color: "white" }}>
+              <p className="footer-desc " style={{ color: "white" }}>
                 Adipisci asperiores ipsum ipsa repellat consequatur repudiandae
                 quisquam assumenda dolor perspiciatis sit ipsum dolor amet.
               </p>
-              <ul class="footer-social text-center">
+              <ul className="footer-social ">
                 <li>
-                  <a class="icofont-facebook" href="#"></a>
+                  <a className="icofont-facebook" href="#"></a>
                 </li>
                 <li>
-                  <a class="icofont-twitter" href="#"></a>
+                  <a className="icofont-twitter" href="#"></a>
                 </li>
                 <li>
-                  <a class="icofont-linkedin" href="#"></a>
+                  <a className="icofont-linkedin" href="#"></a>
                 </li>
                 <li>
-                  <a class="icofont-instagram" href="#"></a>
+                  <a className="icofont-instagram" href="#"></a>
                 </li>
                 <li>
-                  <a class="icofont-pinterest" href="#"></a>
+                  <a className="icofont-pinterest" href="#"></a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="col-sm-6 col-xl-2">
-            <div class="footer-widget">
-              <h3 class="footer-title" style={{ color: "white" }}>
+          <div className="col-sm-6 col-xl-2">
+            <div className="footer-widget">
+              <h3 className="footer-title" style={{ color: "white" }}>
                 Information
               </h3>
-              <div class="footer-links" style={{ color: "white" }}>
+              <div className="footer-links" style={{ color: "white" }}>
                 <ul>
                   <li>
                     <a href="#" style={{ color: "white" }}>
@@ -74,10 +74,10 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          {/* <div class="col-sm-6 col-xl-3">
-            <div class="footer-widget contact">
-              <h3 class="footer-title">Information </h3>
-              <ul class="footer-contact">
+          {/* <div className="col-sm-6 col-xl-3">
+            <div className="footer-widget contact">
+              <h3 className="footer-title">Information </h3>
+              <ul className="footer-contact">
                 <li>
                   
                   <p>
@@ -92,12 +92,12 @@ const Footer = () => {
               </ul>
             </div>
           </div> */}
-          <div class="col-sm-6 col-xl-3">
-            <div class="footer-widget">
-              <h3 class="footer-title" style={{ color: "white" }}>
+          <div className="col-sm-6 col-xl-3">
+            <div className="footer-widget">
+              <h3 className="footer-title" style={{ color: "white" }}>
                 Categories
               </h3>
-              <div class="footer-links" style={{ color: "white" }}>
+              <div className="footer-links" style={{ color: "white" }}>
                 <ul>
                   <li>
                     <a href="#" style={{ color: "white" }}>
@@ -165,17 +165,17 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-xl-3">
-            <div class="footer-widget">
-              <h3 class="footer-title " style={{ color: "white" }}>
+          <div className="col-sm-6 col-xl-3">
+            <div className="footer-widget">
+              <h3 className="footer-title " style={{ color: "white" }}>
                 Download App
               </h3>
-              <p class="footer-desc" style={{ color: "white" }}>
+              <p className="footer-desc" style={{ color: "white" }}>
                 Lorem ipsum dolor sit amet tenetur dignissimos ipsum eligendi
                 autem obcaecati minus ducimus totam reprehenderit
                 exercitationem!
               </p>
-              <div class="footer-app">
+              <div className="footer-app">
                 <a href="#">
                   <img src="images/google-store.png" alt="google" />
                 </a>
@@ -186,13 +186,20 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="footer-bottom">
-              <p class="footer-copytext">
-                © All Copyrights Reserved by <a href="#">OwnFood</a>
-              </p>
-              <div class="footer-card">
+      </div>
+      <div className="row footer_bottom">
+        <div className="col-12">
+          <div className="">
+            <div
+              className="d-flex justify-content-between"
+              style={{ backgroundColor: "rgb(27, 109, 193)", padding: 10 }}
+            >
+              <div>
+                <p className="footer-copytext">
+                  © All Copyrights Reserved by <a href="#">OwnFood</a>
+                </p>
+              </div>
+              <div className="footer-card">
                 <a href="#">
                   <img src="images/payment/jpg/01.jpg" alt="payment" />
                 </a>

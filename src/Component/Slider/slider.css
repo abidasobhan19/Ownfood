@@ -1,4 +1,4 @@
-.carousel-item img{
+/* .carousel-item img{
     animation:zoom-in 50s ease infinite;
    
   }
@@ -16,15 +16,7 @@
     z-index: -1;
     position: relative;
   }
-  /* .slider-text-layer{
-    z-index: 15;
-    position:absolute;
-    font-size: 150px;
-    margin-top: 10%;
-    color: rgb(227, 231, 231);
-    transform: translate(170%);
-    animation:zoom-in 80s ease infinite;
-  }  */
+ 
   
   @keyframes zoom-in {
     0% {
@@ -36,4 +28,7 @@
     100% {
       transform: scale(1, 1);
     }
-  }
+  } */
+
+
+

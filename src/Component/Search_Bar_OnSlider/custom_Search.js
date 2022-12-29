@@ -5,10 +5,10 @@ import LanguageIcon from "@mui/icons-material/Language";
 import "./custom_search.css";
 const Custom_Search = () => {
   return (
-    <Box className="searchBox">
+    <Box className="searchBox ">
       <Box display="flex" flexDirection="row">
         <div
-          className="d-flex justify-content-center align-items-end "
+          className=" d-flex justify-content-center align-items-end "
           style={{ width: "95%", marginLeft: 25, marginTop: 25 }}
         >
           <form className="zip-form">

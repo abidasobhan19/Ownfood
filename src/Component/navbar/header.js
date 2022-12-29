@@ -1,48 +1,48 @@
 import React from "react";
 
-const Header = ({ SetpanLeft }) => {
+const Header = ({ SetpanLeft, setState, handleOpen }) => {
   return (
     <header className="header-part shadow">
       <div className="container-fluid">
-        <div className="header-content">
-          <a className="text-center col-md-6 col-lg-1 ">
-            <img
-              src="images/logo.png"
-              alt="logo"
-              style={{ width: 100, height: 90, marginLeft: -20 }}
-            />
-
-            <button
-              onClick={(e) => {
-                e.preventDefault();
-                SetpanLeft(true);
-              }}
-              style={{
-                height: 40,
-                // width: 40,
-                color: "#1b6dc1",
-              }}
-            >
-              <i class="fas fa-bars fa-lg "></i>
-            </button>
+        <div className=" header-content">
+          <a>
+            <img src="images/logo.png" alt="logo" style={{ height: 90 }} />
           </a>
 
-          <div className="d-flex justify-content-center align-items-end ">
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              SetpanLeft(true);
+            }}
+            style={{
+              height: 40,
+              // width: 40,
+              color: "#1b6dc1",
+            }}
+          >
+            <i class="fas fa-bars fa-lg "></i>
+          </button>
+
+          <form className="">
+            <input
+              type="text"
+              placeholder="Zip Code  "
+              style={{ width: 70, marginLeft: 5 }}
+            />
+
+            <button>
+              <i class="fas thin fa-location-crosshairs"></i>
+            </button>
+          </form>
+          <div className="d-flex justify-content-between  ">
             <form className="zip-form ms-1">
               <input
+                onClick={() => {
+                  handleOpen();
+                }}
                 type="text"
-                placeholder="Zip Code  "
-                style={{ width: 94, marginLeft: 5 }}
+                placeholder="Search anything..."
               />
-
-              <button>
-                <i class="fas thin fa-location-crosshairs"></i>
-              </button>
-              <div
-                class="vl"
-                style={{ border: `1px solid rgba(0, 0, 0, 0.05)`, height: 3 }}
-              ></div>
-              <input type="text" placeholder="Search anything..." />
               <button>
                 <i className="fas fa-search"></i>
               </button>
@@ -52,9 +52,9 @@ const Header = ({ SetpanLeft }) => {
           </div>
 
           <nav class="nav  bg-white">
-            <div class="container align-items-end">
+            <div class="container-fluid ">
               <div class="row">
-                <div class="col-lg-12">
+                <div class="col-12">
                   <div class="navbar-content">
                     <ul class="navbar-list bg-white">
                       <li className="navbar-item">
@@ -109,7 +109,9 @@ const Header = ({ SetpanLeft }) => {
                           BLOG
                         </a>
                       </li>
+                    </ul>
 
+                    <div>
                       <button
                         type="button"
                         style={{ backgroundColor: "#1b6dc1" }}
@@ -120,14 +122,6 @@ const Header = ({ SetpanLeft }) => {
                         Open Your Account
                       </button>
 
-                      {/* <button
-                        type="button"
-                        class="btnSign btn-outline-primary ms-2"
-                      >
-                        <i class="fa-regular fa-user me-1"></i>
-                        Sign In
-                      </button> */}
-
                       <button
                         type="button"
                         style={{ backgroundColor: "#1b6dc1" }}
@@ -137,7 +131,17 @@ const Header = ({ SetpanLeft }) => {
                         <i class="fa-solid fa-right-to-bracket me-1"></i>
                         Sign In
                       </button>
-                    </ul>
+                      <button
+                        className="header-widget header-cart "
+                        title="Cartlist"
+                        onClick={() => {
+                          setState({ isPaneOpen: true });
+                        }}
+                      >
+                        <i className="fas fa-shopping-basket"></i>
+                        <sup>9+</sup>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
