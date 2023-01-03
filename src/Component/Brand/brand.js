@@ -1,13 +1,14 @@
 import React, { Component, useState } from "react";
 import Slider from "react-slick";
-
+import { useNavigate } from "react-router-dom";
 const Brand = () => {
+  const navigate = useNavigate();
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
       <div
         className="icofont-arrow-right dandik slick-arrow"
-        style={{ ...style, display: "block", right: 33 }}
+        style={{ ...style, display: "block", right: 5, marginTop: 15 }}
         onClick={onClick}
       />
     );
@@ -18,7 +19,7 @@ const Brand = () => {
     return (
       <div
         className="icofont-arrow-left bamdik slick-arrow"
-        style={{ ...style, display: "block", left: 33 }}
+        style={{ ...style, display: "block", left: 5, marginTop: 15 }}
         onClick={onClick}
       />
     );
@@ -40,7 +41,14 @@ const Brand = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-12">
-            <div className="section-heading">{/* <h2>Top Seller</h2> */}</div>
+            <div className="section-heading">
+              <div class="title-area text-center">
+                <span class="sub-title"></span>
+                <h2 class="sec-title">
+                  Browse by <span class=" sf_text-theme">Kitchen</span>
+                </h2>
+              </div>
+            </div>
           </div>
         </div>
         <div className="brand-slider slider-arrow slick-initialized slick-slider">
@@ -64,14 +72,13 @@ const Brand = () => {
                   aria-hidden="true"
                   tabIndex="-1"
                   style={{ width: 224 }}
+                  onClick={() => {
+                    navigate("sellerprofle");
+                  }}
                 >
                   <div className="brand-media">
                     <img src="images/brand/02.jpg" alt="brand" />
-                    <div className="brand-overlay">
-                      <a href="#" tabIndex="-1">
-                        <i className="fas fa-link"></i>
-                      </a>
-                    </div>
+                    <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
                     <h4>vegan lover</h4>
@@ -88,11 +95,7 @@ const Brand = () => {
                 >
                   <div className="brand-media">
                     <img src="images/brand/03.jpg" alt="brand" />
-                    <div className="brand-overlay">
-                      <a href="#" tabIndex="-1">
-                        <i className="fas fa-link"></i>
-                      </a>
-                    </div>
+                    <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
                     <h4>organic foody</h4>
@@ -108,11 +111,7 @@ const Brand = () => {
                 >
                   <div className="brand-media">
                     <img src="images/brand/04.jpg" alt="brand" />
-                    <div className="brand-overlay">
-                      <a href="#" tabIndex="-1">
-                        <i className="fas fa-link"></i>
-                      </a>
-                    </div>
+                    <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
                     <h4>ecomart limited</h4>
@@ -129,11 +128,7 @@ const Brand = () => {
                 >
                   <div className="brand-media">
                     <img src="images/brand/05.jpg" alt="brand" />
-                    <div className="brand-overlay">
-                      <a href="#" tabIndex="-1">
-                        <i className="fas fa-link"></i>
-                      </a>
-                    </div>
+                    <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
                     <h4>fresh fortune</h4>
@@ -150,11 +145,7 @@ const Brand = () => {
                 >
                   <div className="brand-media">
                     <img src="images/brand/06.jpg" alt="brand" />
-                    <div className="brand-overlay">
-                      <a href="brand-single.html" tabIndex="-1">
-                        <i className="fas fa-link"></i>
-                      </a>
-                    </div>
+                    <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
                     <h4>econature</h4>
@@ -171,11 +162,7 @@ const Brand = () => {
                 >
                   <div className="brand-media">
                     <img src="images/brand/01.jpg" alt="brand" />
-                    <div className="brand-overlay">
-                      <a href="#" tabIndex="0">
-                        <i className="fas fa-link"></i>
-                      </a>
-                    </div>
+                    <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
                     <h4>natural greeny</h4>
@@ -192,11 +179,7 @@ const Brand = () => {
                 >
                   <div className="brand-media">
                     <img src="images/brand/02.jpg" alt="brand" />
-                    <div className="brand-overlay">
-                      <a href="#" tabIndex="0">
-                        <i className="fas fa-link"></i>
-                      </a>
-                    </div>
+                    <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
                     <h4>vegan lover</h4>
@@ -213,11 +196,7 @@ const Brand = () => {
                 >
                   <div className="brand-media">
                     <img src="images/brand/03.jpg" alt="brand" />
-                    <div className="brand-overlay">
-                      <a href="#" tabIndex="0">
-                        <i className="fas fa-link"></i>
-                      </a>
-                    </div>
+                    <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
                     <h4>organic foody</h4>
@@ -234,11 +213,7 @@ const Brand = () => {
                 >
                   <div className="brand-media">
                     <img src="images/brand/04.jpg" alt="brand" />
-                    <div className="brand-overlay">
-                      <a href="#" tabIndex="0">
-                        <i className="fas fa-link"></i>
-                      </a>
-                    </div>
+                    <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
                     <h4>ecomart limited</h4>
@@ -255,11 +230,7 @@ const Brand = () => {
                 >
                   <div className="brand-media">
                     <img src="images/brand/05.jpg" alt="brand" />
-                    <div className="brand-overlay">
-                      <a href="" tabIndex="0">
-                        <i className="fas fa-link"></i>
-                      </a>
-                    </div>
+                    <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
                     <h4>fresh fortune</h4>
@@ -275,11 +246,7 @@ const Brand = () => {
                 >
                   <div className="brand-media">
                     <img src="images/brand/06.jpg" alt="brand" />
-                    <div className="brand-overlay">
-                      <a href="#" tabIndex="-1">
-                        <i className="fas fa-link"></i>
-                      </a>
-                    </div>
+                    <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
                     <h4>econature</h4>
@@ -296,11 +263,7 @@ const Brand = () => {
                 >
                   <div className="brand-media">
                     <img src="images/brand/01.jpg" alt="brand" />
-                    <div className="brand-overlay">
-                      <a href="#" tabIndex="-1">
-                        <i className="fas fa-link"></i>
-                      </a>
-                    </div>
+                    <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
                     <h4>natural greeny</h4>
@@ -317,11 +280,7 @@ const Brand = () => {
                 >
                   <div className="brand-media">
                     <img src="images/brand/02.jpg" alt="brand" />
-                    <div className="brand-overlay">
-                      <a href="brand-single.html" tabIndex="-1">
-                        <i className="fas fa-link"></i>
-                      </a>
-                    </div>
+                    <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
                     <h4>vegan lover</h4>
@@ -338,11 +297,7 @@ const Brand = () => {
                 >
                   <div className="brand-media">
                     <img src="images/brand/03.jpg" alt="brand" />
-                    <div className="brand-overlay">
-                      <a href="#" tabIndex="-1">
-                        <i className="fas fa-link"></i>
-                      </a>
-                    </div>
+                    <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
                     <h4>organic foody</h4>
@@ -359,11 +314,7 @@ const Brand = () => {
                 >
                   <div className="brand-media">
                     <img src="images/brand/04.jpg" alt="brand" />
-                    <div className="brand-overlay">
-                      <a href="brand-single.html" tabIndex="-1">
-                        <i className="fas fa-link"></i>
-                      </a>
-                    </div>
+                    <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
                     <h4>ecomart limited</h4>
@@ -380,11 +331,7 @@ const Brand = () => {
                 >
                   <div className="brand-media">
                     <img src="images/brand/05.jpg" alt="brand" />
-                    <div className="brand-overlay">
-                      <a href="#" tabIndex="-1">
-                        <i className="fas fa-link"></i>
-                      </a>
-                    </div>
+                    <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
                     <h4>fresh fortune</h4>
@@ -401,11 +348,7 @@ const Brand = () => {
                 >
                   <div className="brand-media">
                     <img src="images/brand/06.jpg" alt="brand" />
-                    <div className="brand-overlay">
-                      <a href="#" tabIndex="-1">
-                        <i className="fas fa-link"></i>
-                      </a>
-                    </div>
+                    <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
                     <h4>econature</h4>

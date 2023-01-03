@@ -16,6 +16,12 @@ import Uberseven from "../assets/img/uber_Image/italian.png";
 import Ubereight from "../assets/img/uber_Image/seafood.png";
 import Ubernine from "../assets/img/uber_Image/top_eats.png";
 import Uberten from "../assets/img/uber_Image/uber_grocery.png";
+import ProductOne from "../assets/img/Slider/ownfood_slider_one.jpg";
+import ProductTwo from "../assets/img/Slider/ownfood_slider_two.jpg";
+
+import ProductThree from "../assets/img/Slider/ownfood_slider_three.jpg";
+
+import ProductFour from "../assets/img/Slider/ownfood_slider_four.jpg";
 
 export const foodItem = [
   {
@@ -84,5 +90,50 @@ export const Uber_image = [
   {
     item_name: "Grocery",
     item_image: Uberten,
+  },
+];
+
+export const four_two = [
+  {
+    item_name: "Barger",
+    item_image: Barger,
+  },
+  {
+    item_name: "Biriyani",
+    item_image: Biriyani,
+  },
+  {
+    item_name: "Chaowmin",
+    item_image: chaowmin,
+  },
+  {
+    item_name: "Nachos",
+    item_image: Nachos,
+  },
+];
+
+export const two_one = [
+  {
+    item_name: "Barger",
+    item_image: Barger,
+  },
+  {
+    item_name: "Biriyani",
+    item_image: Biriyani,
+  },
+];
+
+export const product_details = [
+  {
+    item_image: ProductOne,
+  },
+  {
+    item_image: ProductTwo,
+  },
+  {
+    item_image: ProductThree,
+  },
+  {
+    item_image: ProductFour,
   },
 ];

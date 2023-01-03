@@ -6,12 +6,15 @@ const Blog = () => {
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
-            <div class="section-heading">
-              <h2>Food Blog</h2>
+            <div class="title-area text-center">
+              <span class="sub-title"></span>
+              <h2 class="sec-title">
+                Food <span class=" sf_text-theme">Blog</span>
+              </h2>
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row mt-5">
           <div class="col-lg-3">
             <div class="blog-slider ">
               <div
@@ -19,7 +22,7 @@ const Blog = () => {
                 data-slick-index="-3"
                 aria-hidden="true"
                 tabIndex="-1"
-                style={{ width: 356 }}
+                // style={{ width: 356 }}
               >
                 <div class="blog-media">
                   <a class="blog-img" href="#" tabIndex="-1">
@@ -33,7 +36,7 @@ const Blog = () => {
                       <span>february 02, 2021</span>
                     </li>
                   </ul>
-                  <h4 class="blog-title  text-center">
+                  <h4 class="blog-title  ">
                     <a href="" tabIndex="-1">
                       Instant Food
                     </a>
@@ -64,7 +67,7 @@ const Blog = () => {
                 data-slick-index="-3"
                 aria-hidden="true"
                 tabIndex="-1"
-                style={{ width: 356 }}
+                // style={{ width: 356 }}
               >
                 <div class="blog-media">
                   <a class="blog-img" href="#" tabIndex="-1">
@@ -78,7 +81,7 @@ const Blog = () => {
                       <span>february 02, 2021</span>
                     </li>
                   </ul>
-                  <h4 class="blog-title  text-center">
+                  <h4 class="blog-title  ">
                     <a href="" tabIndex="-1">
                       Instant Food
                     </a>
@@ -109,7 +112,7 @@ const Blog = () => {
                 data-slick-index="-3"
                 aria-hidden="true"
                 tabIndex="-1"
-                style={{ width: 356 }}
+                // style={{ width: 356 }}
               >
                 <div class="blog-media">
                   <a class="blog-img" href="#" tabIndex="-1">
@@ -123,7 +126,7 @@ const Blog = () => {
                       <span>february 02, 2021</span>
                     </li>
                   </ul>
-                  <h4 class="blog-title  text-center">
+                  <h4 class="blog-title  ">
                     <a href="" tabIndex="-1">
                       Instant Food
                     </a>
@@ -154,7 +157,7 @@ const Blog = () => {
                 data-slick-index="-3"
                 aria-hidden="true"
                 tabIndex="-1"
-                style={{ width: 356 }}
+                // style={{ width: 356 }}
               >
                 <div class="blog-media">
                   <a class="blog-img" href="#" tabIndex="-1">
@@ -168,7 +171,7 @@ const Blog = () => {
                       <span>february 02, 2021</span>
                     </li>
                   </ul>
-                  <h4 class="blog-title  text-center">
+                  <h4 class="blog-title  ">
                     <a href="" tabIndex="-1">
                       Instant Food
                     </a>

@@ -2,6 +2,8 @@ import Main from "./layout/main";
 import ProductDetail from "./Component/productDetailpage/ProductsDetails";
 import Home from "./Component/main";
 import Shopping from "./Component/shopping/shopping";
+import SignIn from "./Component/signIn/SignIn";
+import Profile from "./Component/profile/SallerProfile";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -39,6 +41,22 @@ function App() {
           element: (
             <div>
               <Shopping />
+            </div>
+          ),
+        },
+        {
+          path: "/login",
+          element: (
+            <div>
+              <SignIn />
+            </div>
+          ),
+        },
+        {
+          path: "/sellerprofle",
+          element: (
+            <div>
+              <Profile />
             </div>
           ),
         },

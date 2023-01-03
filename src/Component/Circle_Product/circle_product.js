@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./circle_product.css";
+
 import im1 from "../../assets/img/cuisine-1.jpg";
 import im2 from "../../assets/img/cuisine-2.jpg";
 import im3 from "../../assets/img/cuisine-3.jpg";
@@ -18,7 +19,13 @@ const Anim = () => {
   return (
     <section>
       <div className="container-fluid mt-5 ">
-        <h2> Explore Foods By Categories</h2>
+        <div class="title-area text-center">
+          <span class="sf_sub-title"></span>
+          <h2 class="sec-title">
+            Browse Food by <span class=" sf_text-theme">Categories</span>
+          </h2>
+        </div>
+
         <div className="row mt-5 ">
           <div className="col-4 d-flex align-items-center justify-content-center">
             <div className="upper">
@@ -27,14 +34,16 @@ const Anim = () => {
               <div className="main">
                 <div className="name">Biryani</div>
 
-                <img
-                  className="img0 img-fluid"
-                  src={im1}
-                  onClick={() => {
-                    setShow(true);
-                  }}
-                />
-
+                <div className="img0 ">
+                  {" "}
+                  <i
+                    class="fa-solid fa-plus"
+                    style={{
+                      marginLeft: 30,
+                      marginTop: "40%",
+                    }}
+                  ></i>
+                </div>
                 <img
                   className="img1 img-fluid"
                   src={im2}
@@ -90,14 +99,16 @@ const Anim = () => {
               <div className="main">
                 <div className="name">Biryani</div>
 
-                <img
-                  className="img0 img-fluid"
-                  src={im1}
-                  onClick={() => {
-                    setShow(true);
-                  }}
-                />
-
+                <div className="img0 ">
+                  {" "}
+                  <i
+                    class="fa-solid fa-plus"
+                    style={{
+                      marginLeft: 30,
+                      marginTop: "40%",
+                    }}
+                  ></i>
+                </div>
                 <img
                   className="img1 img-fluid"
                   src={im2}
@@ -154,13 +165,16 @@ const Anim = () => {
               <div className="main">
                 <div className="name">Biryani</div>
 
-                <img
-                  className="img0 img-fluid"
-                  src={im1}
-                  onClick={() => {
-                    setShow(true);
-                  }}
-                />
+                <div className="img0 ">
+                  {" "}
+                  <i
+                    class="fa-solid fa-plus"
+                    style={{
+                      marginLeft: 30,
+                      marginTop: "40%",
+                    }}
+                  ></i>
+                </div>
 
                 <img
                   className="img1 img-fluid"

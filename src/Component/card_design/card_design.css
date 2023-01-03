@@ -1,0 +1,27 @@
+.product_container{
+    height:300px;
+    border-style: solid;
+}
+.main_container{
+        margin: 30px;
+        /* background-color: #efe8e8; */
+        border: 1px solid black;   
+}
+.kitchen {
+    height: 295px;
+    width: 41px;
+    background-color: aqua;
+}
+
+.kitchen_name{
+    writing-mode:vertical-rl;
+    margin-top: 40px;
+    text-align: center;
+    margin-left: -1px;
+    /* border: 1px rgb(10, 10, 10); */
+    /* border-style: solid; */
+    cursor: pointer;
+    color: rgb(33, 32, 32);
+    z-index: 1;
+    position: absolute;
+}

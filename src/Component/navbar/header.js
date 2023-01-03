@@ -1,11 +1,31 @@
-import React from "react";
-
+import React, { useState } from "react";
+import { Button, Col, Container, Row } from "react-bootstrap";
+import {
+  FaAngleDown,
+  FaBars,
+  FaCartPlus,
+  FaMapMarkerAlt,
+  FaSearch,
+  FaUserCheck,
+  FaUserCog,
+} from "react-icons/fa";
+import { BsArrowRightShort, BsSearch, BsXLg } from "react-icons/bs";
+import { Link, NavLink } from "react-router-dom";
+import NavLinkData from "../Scripts/NavLinkData";
+// import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+// import "react-tabs/style/react-tabs.css";
+import { useNavigate } from "react-router-dom";
 const Header = ({ SetpanLeft, setState, handleOpen }) => {
+  const navigate = useNavigate();
+  const [zip, SetZip] = useState(false);
+  const zipControl = () => {
+    SetZip(!zip);
+  };
   return (
     <header className="header-part shadow">
       <div className="container-fluid">
         <div className=" header-content">
-          <a>
+          <a href="https://ownfood.hostdivine.com/">
             <img src="images/logo.png" alt="logo" style={{ height: 90 }} />
           </a>
 
@@ -23,7 +43,7 @@ const Header = ({ SetpanLeft, setState, handleOpen }) => {
             <i class="fas fa-bars fa-lg "></i>
           </button>
 
-          <form className="">
+          {/* <form className="">
             <input
               type="text"
               placeholder="Zip Code  "
@@ -33,7 +53,89 @@ const Header = ({ SetpanLeft, setState, handleOpen }) => {
             <button>
               <i class="fas thin fa-location-crosshairs"></i>
             </button>
-          </form>
+          </form> */}
+
+          <div className="zipCode position-relative">
+            <div>
+              <div className="zipCodeBtn" onClick={zipControl}>
+                <span>
+                  <FaMapMarkerAlt />
+                </span>
+                <span className="ps-2">Berlin • Jetzt</span>
+              </div>
+              <div className={zip ? "zipCodePopup active" : "zipCodePopup"}>
+                <div className="d-flex justify-content-center">
+                  <div className="zipCode_input position-relative">
+                    <div className="w-100">
+                      <div>
+                        <h2>Location-Details</h2>
+                        <div>
+                          <div className="d-flex justify-content-between mt-4">
+                            <div>
+                              <span>
+                                <FaMapMarkerAlt />
+                              </span>
+                              <span className="ps-1 ">Berlin</span>
+                            </div>
+                            <div>
+                              <span className="zipCodeBtn">Berlin</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <div className="d-flex justify-content-between mt-4">
+                            <div>
+                              <span>
+                                <FaMapMarkerAlt />
+                              </span>
+                              <span className="ps-1 ">Berlin</span>
+                            </div>
+                            <div>
+                              <span className="zipCodeBtn">Berlin</span>
+                            </div>
+                          </div>
+                        </div>
+                        <hr />
+                        <Button
+                          className="aligns-items-center"
+                          style={{ width: 200, marginLeft: "20%" }}
+                        >
+                          Done
+                        </Button>
+                        {/* <div className="searchBox position-relative">
+                            <div className=" mt-4">
+                              <div>
+                                <input
+                                  type="text"
+                                  placeholder="Search Location"
+                                />
+                                <span>
+                                  <FaSearch />
+                                </span>
+                              </div>
+                            </div>
+                          </div> */}
+                        <div className="filterBtn  mt-4">
+                          <div className=" d-flex justify-content-center">
+                            <span>Filter</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className="closeIcon position-absolute"
+                        onClick={zipControl}
+                      >
+                        <span>
+                          <BsXLg />
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="d-flex justify-content-between  ">
             <form className="zip-form ms-1">
               <input
@@ -126,6 +228,9 @@ const Header = ({ SetpanLeft, setState, handleOpen }) => {
                         type="button"
                         style={{ backgroundColor: "#1b6dc1" }}
                         class="btnSign btn-primary"
+                        onClick={() => {
+                          navigate("login");
+                        }}
                       >
                         {" "}
                         <i class="fa-solid fa-right-to-bracket me-1"></i>

@@ -16,9 +16,11 @@ const Earn_Money = () => {
     >
       <div className="container-fluid">
         <div className="row justify-content-center">
-          <div className="col-xl-6 col-lg-7 col-md-8">
-            {/* <div className="bd-section__title-wrapper p-relative mb-85"></div> */}
-            <h2 className="text-center "> EARN MONEY WITH US</h2>
+          <div class="title-area text-center">
+            <span class="sub-title"></span>
+            <h2 class="sec-title">
+              Earn Money <span class=" sf_text-theme">With Us</span>
+            </h2>
           </div>
         </div>
         <div className="row mt-5">
@@ -35,9 +37,7 @@ const Earn_Money = () => {
               </div>
               <div className="bd-step__content">
                 <h3>
-                  <a style={{ color: "black" }} href="about.html">
-                    Instant Food
-                  </a>
+                  <a style={{ color: "black" }}>Instant Food</a>
                 </h3>
                 <p>Consider how some search engines autocorrect for spen</p>
               </div>
@@ -56,9 +56,7 @@ const Earn_Money = () => {
               </div>
               <div className="bd-step__content">
                 <h3>
-                  <a style={{ color: "black" }} href="about.html">
-                    Pre-Order
-                  </a>
+                  <a style={{ color: "black" }}>Pre-Order</a>
                 </h3>
                 <p>Consider how some search engines autocorrect for spen</p>
               </div>
@@ -77,9 +75,7 @@ const Earn_Money = () => {
               </div>
               <div className="bd-step__content">
                 <h3>
-                  <a style={{ color: "black" }} href="about.html">
-                    Cook and Sell{" "}
-                  </a>
+                  <a style={{ color: "black" }}>Cook and Sell </a>
                 </h3>
                 <p>Consider how some search engines autocorrect for spen</p>
               </div>
@@ -95,9 +91,7 @@ const Earn_Money = () => {
               </div>
               <div className="bd-step__content">
                 <h3>
-                  <a style={{ color: "black" }} href="about.html">
-                    Catering
-                  </a>
+                  <a style={{ color: "black" }}>Catering</a>
                 </h3>
                 <p>Consider how some search engines autocorrect for spen</p>
               </div>
@@ -113,9 +107,7 @@ const Earn_Money = () => {
               </div>
               <div className="bd-step__content">
                 <h3>
-                  <a style={{ color: "black" }} href="about.html">
-                    Blog
-                  </a>
+                  <a style={{ color: "black" }}>Blog</a>
                 </h3>
                 <p>Consider how some search engines autocorrect for spen</p>
               </div>

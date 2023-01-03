@@ -1,6 +1,11 @@
 .details-gallery {
     position: relative;
   }
+
+  .details-gallery:hover .details-preview img {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
   .details-label-group {
     position: absolute;
     top: 20px;
@@ -624,3 +629,7 @@
     }
   }
   
+
+  .bg-new{
+background-image: url("../../assets/img/Slider/discount_bg_2.png");
+  }

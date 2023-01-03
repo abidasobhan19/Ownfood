@@ -22,6 +22,9 @@ import New_Slider from "./new_slider/new_slider";
 import Circle_Product from "./Circle_Product/circle_product";
 import FourbyTwo from "./fourbyTwo/fourbytwo";
 import SliderComp from "./product_center_slider/Product_center_slider";
+import OpenAccountInfo from "./Account_info/account";
+import Card_Design from "./card_design/card_design";
+import Find_Us from "./find_us/find_us";
 const Main = () => {
   return (
     <>
@@ -29,19 +32,23 @@ const Main = () => {
       {/* <Slider /> */}
       <ClientSlider />
       {/* <Custom_Search /> */}
-      {/* <Brand /> */}
 
+      {/* <Card_Design /> */}
       <Earn_Money />
-      <Circle_Product />
-      <FourbyTwo />
+      <OpenAccountInfo />
       <New_Slider />
-      <Collection />
 
-      {/* <SliderComp /> */}
+      <Circle_Product />
+      <Collection />
+      <FourbyTwo />
+      <Brand />
+
+      <SliderComp />
       {/* <Item /> */}
 
       {/* <AllItem /> */}
       <Blog />
+      {/* <Find_Us /> */}
     </>
   );
 };

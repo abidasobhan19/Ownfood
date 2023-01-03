@@ -31,7 +31,9 @@ const LongSearch = ({ openSearch, handleClose, SetpanLeft }) => {
         <Box sx={style}>
           <div className="container-fluid">
             <div className="d-flex  justify-content-between ">
-              <img src={Logo} style={{ width: 100, marginTop: -20 }} />
+              <a href="https://ownfood.hostdivine.com">
+                <img src={Logo} style={{ width: 100, marginTop: -20 }} />
+              </a>
               <button
                 onClick={(e) => {
                   e.preventDefault();

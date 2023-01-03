@@ -46,11 +46,19 @@ const Collection = () => {
     slidesToScroll: 1,
   };
   return (
-    <section className="home-index-slider slider-arrow  slick-initialized slick-slidec">
-      <div class="row">
+    <section
+      className="home-index-slider slider-arrow  
+      "
+    >
+      <div class="row  ">
         <div class="col">
           <div class="section-heading mt-5">
-            <h2>Instant Food</h2>
+            <div class="title-area text-center">
+              <span class="sub-title"></span>
+              <h2 class="sec-title">
+                Instant <span class=" sf_text-theme">Food</span>
+              </h2>
+            </div>
           </div>
         </div>
       </div>

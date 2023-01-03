@@ -8,6 +8,7 @@ import Footer from "../Component/footer/footer";
 import Sidebar from "../Component/slidebar/sidebar";
 import DrawerLeft from "../Component/drawerLeft/drawerleft";
 import LongSearch from "../Component/largeSearch/search";
+import Ownfood from "../assets/img/ownfood.png";
 const Main = () => {
   const [state, setState] = useState({
     isPaneOpen: false,
@@ -39,17 +40,35 @@ const Main = () => {
 
         <div style={{ zIndex: 999 }}>
           <SlidingPane
-            closeIcon={
-              <div>
-                <i class="icofont-close"></i>
-              </div>
-            }
+            className="slidingpaneLeft"
             isOpen={paneLeft}
             from="left"
-            width="400px"
+            width="300px"
             z-Index="27"
-            onRequestClose={() => SetpanLeft(false)}
+            // onRequestClose={() => SetpanLeft(false)}
           >
+            <div className="d-flex">
+              <div className="row">
+                <div className="col-md-10">
+                  <a href="https://ownfood.hostdivine.com/">
+                    {" "}
+                    <img src={Ownfood} className="img-fluid" />
+                  </a>
+                </div>
+                <div className="col-md-2">
+                  {" "}
+                  <button
+                    class=""
+                    onClick={() => {
+                      SetpanLeft(false);
+                    }}
+                  >
+                    <i class="icofont-close"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
             <DrawerLeft />
           </SlidingPane>
         </div>

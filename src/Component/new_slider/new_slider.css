@@ -2,6 +2,8 @@
 .see_more{
     font-weight: bold;
     float: right;
+    
+    margin-top: -15px;
   }
 .sf_product-card {
     float: left;
