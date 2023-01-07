@@ -3,7 +3,7 @@ import ProductDetail from "./Component/productDetailpage/ProductsDetails";
 import Home from "./Component/main";
 import Shopping from "./Component/shopping/shopping";
 import SignIn from "./Component/signIn/SignIn";
-import Profile from "./Component/profile/SallerProfile";
+import Profile from "./Component/profile/SallerProfileUpdate";
 import {
   createBrowserRouter,
   RouterProvider,

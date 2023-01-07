@@ -2,6 +2,7 @@ import React, { Component, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./collections.css";
 import ShoppingPopUp from "../popup/popUpView";
 import { foodItem } from "../data";
 import { useNavigate } from "react-router-dom";
@@ -64,7 +65,7 @@ const Collection = () => {
       </div>
       <div style={{ width: "99%" }}>
         <Slider {...settings}>
-          <div>
+          <div className="sf_slick">
             <div class="product-card shadow">
               <div class="product-media">
                 <div class="product-label">
@@ -154,7 +155,7 @@ const Collection = () => {
             </div>
           </div>
 
-          <div>
+          <div className="sf_slick">
             <div class="product-card shadow">
               <div class="product-media">
                 <div class="product-label">
@@ -243,7 +244,7 @@ const Collection = () => {
             </div>
           </div>
 
-          <div>
+          <div className="sf_slick">
             <div class="product-card shadow">
               <div class="product-media">
                 <div class="product-label">
@@ -332,7 +333,7 @@ const Collection = () => {
             </div>
           </div>
 
-          <div>
+          <div className="sf_slick">
             <div class="product-card shadow">
               <div class="product-media">
                 <div class="product-label">
@@ -421,7 +422,7 @@ const Collection = () => {
             </div>
           </div>
 
-          <div>
+          <div className="sf_slick">
             <div class="product-card shadow">
               <div class="product-media">
                 <div class="product-label">
@@ -510,7 +511,7 @@ const Collection = () => {
             </div>
           </div>
 
-          <div>
+          <div className="sf_slick">
             <div class="product-card shadow">
               <div class="product-media">
                 <div class="product-label">
@@ -686,7 +687,7 @@ const Collection = () => {
             </div>
           </div> */}
 
-          <div>
+          <div className="sf_slick">
             <div class="product-card shadow">
               <div class="product-media">
                 <div class="product-label">
@@ -770,7 +771,7 @@ const Collection = () => {
             </div>
           </div>
 
-          <div>
+          <div className="sf_slick">
             <div class="product-card shadow">
               <div class="product-media">
                 <div class="product-label">

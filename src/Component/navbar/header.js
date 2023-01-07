@@ -137,14 +137,13 @@ const Header = ({ SetpanLeft, setState, handleOpen }) => {
           </div>
 
           <div className="d-flex justify-content-between  ">
-            <form className="zip-form ms-1">
-              <input
-                onClick={() => {
-                  handleOpen();
-                }}
-                type="text"
-                placeholder="Search anything..."
-              />
+            <form
+              className="zip-form ms-1"
+              onClick={() => {
+                handleOpen();
+              }}
+            >
+              <input placeholder=" Search Food Drinks..." disabled />
               <button>
                 <i className="fas fa-search"></i>
               </button>

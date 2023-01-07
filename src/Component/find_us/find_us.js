@@ -1,64 +1,64 @@
-import React from "react";
-import "./find_us.css";
-const Find_Us = () => {
-  return (
-    <section className="mural-bg bg-main ">
-      <div className="container-fluid  ">
-        <div className="col-12">
-          <h2
-            className="text-center align-items-center justify-content-center"
-            style={{ color: "white", paddingTop: 10, paddingBottom: 10 }}
-          >
-            {" "}
-            Find Us In This State
-          </h2>
-        </div>
-        <div className="row">
-          <div className="col-sm-6 col-xl-2">
-            <div className="footer-widget">
-              <h3 className="footer-title" style={{ color: "white" }}>
-                USA
-              </h3>
+import React, { useState, useRef } from "react";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import L from "leaflet";
 
-              <div className="sf_footer-links" style={{ color: "white" }}>
-                <ul>
-                  <li>
-                    <a href="#" style={{ color: "white", fontWeight: "bold" }}>
-                      San Fransico
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" style={{ color: "white", fontWeight: "bold" }}>
-                      New York
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" style={{ color: "white", fontWeight: "bold" }}>
-                      Washington
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" style={{ color: "white", fontWeight: "bold" }}>
-                      Texas
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" style={{ color: "white", fontWeight: "bold" }}>
-                      Rodhe Iland
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" style={{ color: "white", fontWeight: "bold" }}>
-                      New Mexico
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" style={{ color: "white", fontWeight: "bold" }}>
-                      Maine
-                    </a>
-                  </li>
-                </ul>
-              </div>
+import "leaflet/dist/leaflet.css";
+import osm from "./osm-providers";
+
+import cities from "./cities.json";
+
+const markerIcon = new L.Icon({
+  iconUrl: require("../../assets/img/marker.png"),
+  iconSize: [40, 40],
+  iconAnchor: [17, 46], //[left/right, top/bottom]
+  popupAnchor: [0, -46], //[left/right, top/bottom]
+});
+
+const Find_Us = () => {
+  const [center, setCenter] = useState({ lat: 23.777176, lng: 90.407608 });
+  const ZOOM_LEVEL = 6;
+  const mapRef = useRef();
+
+  return (
+    <section>
+      <div className="container-fluid">
+        <div className="row" style={{ zIndex: -1 }}>
+          <div className="col text-center">
+            <div class="title-area text-center">
+              <span class="sub-title"></span>
+              <h2 class="sec-title">
+                Find us in this <span class=" sf_text-theme">State</span>
+              </h2>
+            </div>
+            <div
+              className="col mt-5"
+              style={{ position: "relative", overflow: "hidden" }}
+            >
+              <MapContainer
+                center={center}
+                zoom={ZOOM_LEVEL}
+                ref={mapRef}
+                style={{ height: 400, width: "100wh" }}
+              >
+                <TileLayer
+                  url={osm.maptiler.url}
+                  attribution={osm.maptiler.attribution}
+                />
+
+                {cities.map((city, idx) => (
+                  <Marker
+                    position={[city.lat, city.lng]}
+                    icon={markerIcon}
+                    key={idx}
+                  >
+                    <Popup>
+                      <b>
+                        {city.city}, {city.country}
+                      </b>
+                    </Popup>
+                  </Marker>
+                ))}
+              </MapContainer>
             </div>
           </div>
         </div>

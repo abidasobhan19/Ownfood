@@ -112,3 +112,13 @@ border-radius: 5px ;
     color: #eee;
     font-size: 20px;
 } */
+
+.stickytest{
+
+    position: sticky;
+    
+    top: 30%;
+    /* width: 20%; */
+    /* width: 100%; */
+
+}

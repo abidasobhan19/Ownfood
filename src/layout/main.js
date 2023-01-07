@@ -33,8 +33,8 @@ const Main = () => {
           overlayClassName="some-custom-overlay-class"
           isOpen={state.isPaneOpen}
           width="400px"
-        >
           onRequestClose={() => setState({ paneLeft: false })}
+        >
           <Sidebar setState={setState} />
         </SlidingPane>
 
@@ -45,7 +45,7 @@ const Main = () => {
             from="left"
             width="300px"
             z-Index="27"
-            // onRequestClose={() => SetpanLeft(false)}
+            onRequestClose={() => SetpanLeft(false)}
           >
             <div className="d-flex">
               <div className="row">

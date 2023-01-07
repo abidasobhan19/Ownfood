@@ -8,9 +8,9 @@ const SignIn = () => {
       <section class="sf-form-part">
         <div class="container ">
           <div class="row justify-content-center align-items-center ">
-            <div class="col-12 col-sm-10 col-md-12 col-lg-12 col-xl-10 signIn-innerPart mt-5">
+            <div class="col-8 col-sm-8 col-md-8  col-lg-8 col-xl-8 signIn-innerPart mt-5">
               <div class="">
-                <div class="text-center mb-4 mt-3">
+                <div class=" mb-4 mt-3">
                   <h2 className="text-white">welcome!</h2>
                   <p>Use your credentials to access</p>
                 </div>
@@ -19,7 +19,7 @@ const SignIn = () => {
                     <div className="col-4">
                       <img src={img} alt="" className="img-fluid" />
                     </div>
-                    <div className="col-8">
+                    <div className="col-4">
                       <form class="user-form">
                         <div class="form-group">
                           <input

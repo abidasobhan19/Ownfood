@@ -1,5 +1,6 @@
 import React, { Component, useState } from "react";
 import Slider from "react-slick";
+import "./brand.css";
 import { useNavigate } from "react-router-dom";
 const Brand = () => {
   const navigate = useNavigate();
@@ -37,15 +38,16 @@ const Brand = () => {
     slidesToScroll: 3,
   };
   return (
-    <section className="section brand-part ">
-      <div className="container-fluid">
-        <div className="row">
+    <section className="section brand-part bg-img shadow-lg">
+      <div className="container-fluid  bg-transparent_color">
+        <div className="row ">
           <div className="col-12">
             <div className="section-heading">
               <div class="title-area text-center">
                 <span class="sub-title"></span>
                 <h2 class="sec-title">
-                  Browse by <span class=" sf_text-theme">Kitchen</span>
+                  <span className="sf_init_title"> Browse by </span>{" "}
+                  <span class=" sf_text-theme">Kitchen</span>
                 </h2>
               </div>
             </div>
@@ -67,7 +69,7 @@ const Brand = () => {
             >
               <Slider {...settings}>
                 <div
-                  className="brand-wrap slick-slide slick-cloned mt-3"
+                  className="brand-wrap slick-slide slick-cloned mt-3 "
                   data-slick-index="-5"
                   aria-hidden="true"
                   tabIndex="-1"
@@ -81,7 +83,7 @@ const Brand = () => {
                     <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
-                    <h4>vegan lover</h4>
+                    <h4 className="sf_title_color_brand">vegan lover</h4>
                     <p>(45 items)</p>
                   </div>
                 </div>
@@ -98,7 +100,7 @@ const Brand = () => {
                     <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
-                    <h4>organic foody</h4>
+                    <h4 className="sf_title_color_brand">organic foody</h4>
                     <p>(45 items)</p>
                   </div>
                 </div>
@@ -114,7 +116,7 @@ const Brand = () => {
                     <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
-                    <h4>ecomart limited</h4>
+                    <h4 className="sf_title_color_brand">ecomart limited</h4>
                     <p>(45 items)</p>
                   </div>
                 </div>
@@ -131,7 +133,7 @@ const Brand = () => {
                     <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
-                    <h4>fresh fortune</h4>
+                    <h4 className="sf_title_color_brand">fresh fortune</h4>
                     <p>(45 items)</p>
                   </div>
                 </div>
@@ -148,7 +150,7 @@ const Brand = () => {
                     <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
-                    <h4>econature</h4>
+                    <h4 className="sf_title_color_brand">econature</h4>
                     <p>(45 items)</p>
                   </div>
                 </div>
@@ -165,7 +167,7 @@ const Brand = () => {
                     <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
-                    <h4>natural greeny</h4>
+                    <h4 className="sf_title_color_brand">natural greeny</h4>
                     <p>(45 items)</p>
                   </div>
                 </div>
@@ -182,7 +184,7 @@ const Brand = () => {
                     <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
-                    <h4>vegan lover</h4>
+                    <h4 className="sf_title_color_brand">vegan lover</h4>
                     <p>(45 items)</p>
                   </div>
                 </div>
@@ -199,7 +201,7 @@ const Brand = () => {
                     <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
-                    <h4>organic foody</h4>
+                    <h4 className="sf_title_color_brand">organic foody</h4>
                     <p>(45 items)</p>
                   </div>
                 </div>
@@ -216,7 +218,7 @@ const Brand = () => {
                     <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
-                    <h4>ecomart limited</h4>
+                    <h4 className="sf_title_color_brand">ecomart limited</h4>
                     <p>(45 items)</p>
                   </div>
                 </div>
@@ -233,7 +235,7 @@ const Brand = () => {
                     <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
-                    <h4>fresh fortune</h4>
+                    <h4 className="sf_title_color_brand">fresh fortune</h4>
                     <p>(45 items)</p>
                   </div>
                 </div>
@@ -249,7 +251,7 @@ const Brand = () => {
                     <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
-                    <h4>econature</h4>
+                    <h4 className="sf_title_color_brand">econature</h4>
                     <p>(45 items)</p>
                   </div>
                 </div>
@@ -266,7 +268,7 @@ const Brand = () => {
                     <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
-                    <h4>natural greeny</h4>
+                    <h4 className="sf_title_color_brand">natural greeny</h4>
                     <p>(45 items)</p>
                   </div>
                 </div>
@@ -283,7 +285,7 @@ const Brand = () => {
                     <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
-                    <h4>vegan lover</h4>
+                    <h4 className="sf_title_color_brand">vegan lover</h4>
                     <p>(45 items)</p>
                   </div>
                 </div>
@@ -300,7 +302,7 @@ const Brand = () => {
                     <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
-                    <h4>organic foody</h4>
+                    <h4 className="sf_title_color_brand">organic foody</h4>
                     <p>(45 items)</p>
                   </div>
                 </div>
@@ -317,7 +319,7 @@ const Brand = () => {
                     <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
-                    <h4>ecomart limited</h4>
+                    <h4 className="sf_title_color_brand">ecomart limited</h4>
                     <p>(45 items)</p>
                   </div>
                 </div>
@@ -334,7 +336,7 @@ const Brand = () => {
                     <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
-                    <h4>fresh fortune</h4>
+                    <h4 className="sf_title_color_brand">fresh fortune</h4>
                     <p>(45 items)</p>
                   </div>
                 </div>
@@ -351,7 +353,7 @@ const Brand = () => {
                     <div className="brand-overlay"></div>
                   </div>
                   <div className="brand-meta">
-                    <h4>econature</h4>
+                    <h4 className="sf_title_color_brand">econature</h4>
                     <p>(45 items)</p>
                   </div>
                 </div>

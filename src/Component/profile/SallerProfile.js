@@ -114,7 +114,7 @@ const SallerProfile = () => {
       <div className="sallerContent col-12 container-fluid">
         <Row>
           <Col xs={3}>
-            <div className="asidebar sticky-top">
+            <div className="asidebar sticky-test">
               <Link to={"/allproduct"}>All Prodct</Link>
               <Link to={"/ba"}>Chickn</Link>
               <Link to={"/allprduct"}>Burger</Link>

@@ -1,25 +1,29 @@
 import React from "react";
 // import ArrowOne from "../../assets/img/arrow1.png";
 // import ArrowTwo from "../../assets/img/arrow2.png";
+import "./earn_money.css";
 import Icon from "../../assets/img/step-3.png";
 const Earn_Money = () => {
   return (
     <section
       className="bd-step__area shadow-lg"
-      style={{
-        // marginTop: -50,
-        backgroundColor: "white",
-        paddingTop: 40,
-        paddingBottom: 40,
-        // padding: 40,
-      }}
+      style={
+        {
+          // marginTop: -50,
+          // backgroundColor: "white",
+          // paddingTop: 40,
+          // paddingBottom: 40,
+          // padding: 40,
+        }
+      }
     >
-      <div className="container-fluid">
+      <div className="container-fluid sf_earn_wrapper">
         <div className="row justify-content-center">
-          <div class="title-area text-center">
+          <div class="title-area text-center mt-5">
             <span class="sub-title"></span>
             <h2 class="sec-title">
-              Earn Money <span class=" sf_text-theme">With Us</span>
+              <span className="sf_init_title "> Earn Money </span>{" "}
+              <span class=" sf_text-theme">With Us</span>
             </h2>
           </div>
         </div>
@@ -37,9 +41,11 @@ const Earn_Money = () => {
               </div>
               <div className="bd-step__content">
                 <h3>
-                  <a style={{ color: "black" }}>Instant Food</a>
+                  <a style={{ color: "white" }}>Instant Food</a>
                 </h3>
-                <p>Consider how some search engines autocorrect for spen</p>
+                <p style={{ color: "white" }}>
+                  Consider how some search engines autocorrect for spen
+                </p>
               </div>
             </div>
           </div>
@@ -56,9 +62,11 @@ const Earn_Money = () => {
               </div>
               <div className="bd-step__content">
                 <h3>
-                  <a style={{ color: "black" }}>Pre-Order</a>
+                  <a style={{ color: "white" }}>Pre-Order</a>
                 </h3>
-                <p>Consider how some search engines autocorrect for spen</p>
+                <p style={{ color: "white" }}>
+                  Consider how some search engines autocorrect for spen
+                </p>
               </div>
             </div>
           </div>
@@ -75,9 +83,11 @@ const Earn_Money = () => {
               </div>
               <div className="bd-step__content">
                 <h3>
-                  <a style={{ color: "black" }}>Cook and Sell </a>
+                  <a style={{ color: "white" }}>Cook and Sell </a>
                 </h3>
-                <p>Consider how some search engines autocorrect for spen</p>
+                <p style={{ color: "white" }}>
+                  Consider how some search engines autocorrect for spen
+                </p>
               </div>
             </div>
           </div>
@@ -91,9 +101,11 @@ const Earn_Money = () => {
               </div>
               <div className="bd-step__content">
                 <h3>
-                  <a style={{ color: "black" }}>Catering</a>
+                  <a style={{ color: "white" }}>Catering</a>
                 </h3>
-                <p>Consider how some search engines autocorrect for spen</p>
+                <p style={{ color: "white" }}>
+                  Consider how some search engines autocorrect for spen
+                </p>
               </div>
             </div>
           </div>
@@ -107,9 +119,11 @@ const Earn_Money = () => {
               </div>
               <div className="bd-step__content">
                 <h3>
-                  <a style={{ color: "black" }}>Blog</a>
+                  <a style={{ color: "white" }}>Blog</a>
                 </h3>
-                <p>Consider how some search engines autocorrect for spen</p>
+                <p style={{ color: "white" }}>
+                  Consider how some search engines autocorrect for spen
+                </p>
               </div>
             </div>
           </div>

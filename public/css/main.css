@@ -539,6 +539,7 @@ button:focus {
   border-left: 1px solid var(--border);
 }
 .dropdown-position-list li a {
+  top: 0px;
   width: 100%;
   font-size: 15px;
   line-height: 18px;
@@ -546,6 +547,7 @@ button:focus {
   padding: 8px 15px;
   color: var(--text);
   background: var(--white);
+  font-family: var(--pfamily);
   white-space: nowrap;
   text-transform: capitalize;
   transition: all linear 0.3s;
@@ -555,8 +557,8 @@ button:focus {
   -o-transition: all linear 0.3s;
 }
 .dropdown-position-list li a:hover {
-  color: var(--primary);
-  background: var(--chalk);
+  color: white;
+  background: var(--primary);
 }
 .dropdown-megamenu {
   position: static;
@@ -3889,7 +3891,7 @@ tbody tr td:last-child {
 }
 
 .navbar-link {
-  /* padding: 20px 5px; */
+  padding: 20px 5px;
   font-family: var(--pfamily);
   font-size: 17px;
   font-weight: 700;
@@ -6220,55 +6222,6 @@ tbody tr td:last-child {
 
 
 
-.bd-step__title {
-  font-size: 45px;
-  position: absolute;
-  top: 53%;
-  left: 40%;
-  transform: translate(0%);
-  z-index: 11;
-  color: black;
-  font-weight: var(--bd-fw-light);
-  font-family: var(--pfamily);
-}
-
-
-
-
-.bd-step__icon {
-  transform: translate3d(0, 0, 0);
-  -webkit-transition: transform 0.3s cubic-bezier(0.21, 0.6, 0.44, 2.18);
-  -moz-transition: transform 0.3s cubic-bezier(0.21, 0.6, 0.44, 2.18);
-  -ms-transition: transform 0.3s cubic-bezier(0.21, 0.6, 0.44, 2.18);
-  -o-transition: transform 0.3s cubic-bezier(0.21, 0.6, 0.44, 2.18);
-  transition: transform 0.3s cubic-bezier(0.21, 0.6, 0.44, 2.18);
-}
-.bd-step__icon img {
-  margin-bottom: 25px;
-}
-.bd-step__content p {
-  color: "black"
-}
-
-.bd-step__content h3 {
-  margin-bottom: 25px;
-}
-.bd-step__content h3 a:hover {
-  color:#2727b8 !important;
-
-}
-.bd-step__item {
-  padding: 0 27px;
-}
-
-
-.bd-step__area{
-background-image: url("../images//banner-shape.png");
-background-size: cover;
-height:400px
-}
-
-
 .sf_slide_body{
   height: 200px;
     max-width: 410px;
@@ -6701,7 +6654,8 @@ background-color: rgb(27 109 193);
     margin-top: 5px;
   }
   .openAccountInfo .downSection .rightSide .innerCard span {
-    color: #fff;
+    color: #fff;       
+
     font-size: 50px;
   }
   .openAccountInfo .downSection .rightSide .arrow {
@@ -6721,11 +6675,11 @@ background-color: rgb(27 109 193);
 
 .zipCode .zipCodeBtn,
  .search {
-  background: #1b6dc1;
-  color: var(--white);
+  background: #ffffff;
+  color: black;
   padding: 7px 6px;
   border-radius: 5px ;
-  font-weight: 600;
+  font-weight: 900;
   cursor: pointer;
   margin: 0 3px;
   transition: all 0.1s linear;
@@ -6857,4 +6811,12 @@ background-color: rgb(27 109 193);
 }
 .slide-pane{
  background-color:#ffffff !important ; 
+}
+
+
+
+
+
+.sf_init_title{
+  color: white;
 }

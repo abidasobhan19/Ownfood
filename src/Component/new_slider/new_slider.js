@@ -21,8 +21,8 @@ const New_Slider = () => {
               <span></span>
               <div class="card-body searchform show-hide-content">
                 <div class="d-flex flex-wrap">
-                  <div className="col-md-3">
-                    <div className="col shadow">
+                  <div className="col-md-3 ">
+                    <div className="col shadow ">
                       <div className="product-card">
                         <div className="product-media">
                           <div className="product-label">
@@ -32,7 +32,9 @@ const New_Slider = () => {
                             <i className="fas fa-heart"></i>
                           </button>
                           <a className="product-image" href="#">
-                            <img src={foodItem[1].item_image} alt="product" />
+                            <div className="img_animation">
+                              <img src={foodItem[1].item_image} alt="product" />
+                            </div>
                           </a>
                           <div className="product-widget">
                             <a
@@ -101,8 +103,8 @@ const New_Slider = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-3 ">
-                    <div className="col shadow">
+                  <div className="col-md-3  ">
+                    <div className="col shadow ">
                       <div className="product-card">
                         <div className="product-media">
                           <div className="product-label">
@@ -112,7 +114,9 @@ const New_Slider = () => {
                             <i className="fas fa-heart"></i>
                           </button>
                           <a className="product-image" href="#">
-                            <img src={foodItem[1].item_image} alt="product" />
+                            <div className="img_animation">
+                              <img src={foodItem[1].item_image} alt="product" />
+                            </div>
                           </a>
                           <div className="product-widget">
                             <a
@@ -181,8 +185,8 @@ const New_Slider = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-3 ">
-                    <div className="col shadow">
+                  <div className="col-md-3  ">
+                    <div className="col shadow ">
                       <div className="product-card">
                         <div className="product-media">
                           <div className="product-label">
@@ -192,7 +196,9 @@ const New_Slider = () => {
                             <i className="fas fa-heart"></i>
                           </button>
                           <a className="product-image" href="#">
-                            <img src={foodItem[1].item_image} alt="product" />
+                            <div className="img_animation">
+                              <img src={foodItem[1].item_image} alt="product" />
+                            </div>
                           </a>
                           <div className="product-widget">
                             <a
@@ -261,8 +267,8 @@ const New_Slider = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-3 ">
-                    <div className="col shadow">
+                  <div className="col-md-3  ">
+                    <div className="col shadow ">
                       <div className="product-card">
                         <div className="product-media">
                           <div className="product-label">
@@ -272,7 +278,9 @@ const New_Slider = () => {
                             <i className="fas fa-heart"></i>
                           </button>
                           <a className="product-image" href="#">
-                            <img src={foodItem[1].item_image} alt="product" />
+                            <div className="img_animation">
+                              <img src={foodItem[1].item_image} alt="product" />
+                            </div>
                           </a>
                           <div className="product-widget">
                             <a
@@ -380,7 +388,9 @@ const New_Slider = () => {
                           <i className="fas fa-heart"></i>
                         </button>
                         <a className="sf_product-image" href="#">
-                          <img src={foodItem[0].item_image} alt="product" />
+                          <div className="img_animation">
+                            <img src={foodItem[0].item_image} alt="product" />
+                          </div>
                         </a>
                         <div className="sf_product-widget">
                           <a
@@ -413,7 +423,9 @@ const New_Slider = () => {
                           <i className="fas fa-heart"></i>
                         </button>
                         <a className="sf_product-image" href="#">
-                          <img src={foodItem[2].item_image} alt="product" />
+                          <div className="img_animation">
+                            <img src={foodItem[2].item_image} alt="product" />
+                          </div>
                         </a>
                         <div className="sf_product-widget">
                           <a
@@ -446,7 +458,9 @@ const New_Slider = () => {
                           <i className="fas fa-heart"></i>
                         </button>
                         <a className="sf_product-image" href="#">
-                          <img src={foodItem[0].item_image} alt="product" />
+                          <div className="img_animation">
+                            <img src={foodItem[0].item_image} alt="product" />
+                          </div>
                         </a>
                         <div className="sf_product-widget">
                           <a
@@ -479,7 +493,9 @@ const New_Slider = () => {
                           <i className="fas fa-heart"></i>
                         </button>
                         <a className="sf_product-image" href="#">
-                          <img src={foodItem[2].item_image} alt="product" />
+                          <div className="img_animation">
+                            <img src={foodItem[2].item_image} alt="product" />
+                          </div>
                         </a>
                         <div className="sf_product-widget">
                           <a

@@ -32,8 +32,7 @@ const Main = () => {
       {/* <Slider /> */}
       <ClientSlider />
       {/* <Custom_Search /> */}
-
-      {/* <Card_Design /> */}
+      <Card_Design />
       <Earn_Money />
       <OpenAccountInfo />
       <New_Slider />
@@ -48,7 +47,7 @@ const Main = () => {
 
       {/* <AllItem /> */}
       <Blog />
-      {/* <Find_Us /> */}
+      <Find_Us />
     </>
   );
 };

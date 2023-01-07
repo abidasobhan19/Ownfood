@@ -12,127 +12,49 @@ import DraftsIcon from "@mui/icons-material/Drafts";
 import "./drawerleft.css";
 
 export default function BasicList() {
-  const [open, setOpen] = useState(true);
+  const [active, setActive] = useState(false);
   return (
-    <Box sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}>
-      <div class=" align-items-center align-items-sm-start  text-black  bg-white">
-        <ul
-          class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start bg-white w-100"
-          id="menu"
-        >
-          <li class="w-100">
-            <a href="#" class="nav-link align-middle px-0">
-              <i class="fs-4 bi-house"></i>{" "}
-              <span class="ms-1 d-none d-sm-inline">Home</span>
-            </a>
-          </li>
-
-          <li className="w-100">
-            <a
-              href="#submenu3"
-              data-bs-toggle="collapse"
-              class="nav-link px-0 align-middle collapsed"
-            >
-              <i class="fs-4 bi-grid"></i>{" "}
-              <span class="ms-1 d-none d-sm-inline">ALL FOOD</span>{" "}
-            </a>
-            <ul
-              class="collapse nav flex-column ms-1"
-              id="submenu3"
-              data-bs-parent="#menu"
-            >
-              <li class="w-100">
-                <a href="#" class="nav-link px-0">
-                  {" "}
-                  <span class="d-none d-sm-inline">POPULAR KITCHEN</span> 1
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link px-1">
-                  {" "}
-                  <span class="d-none d-sm-inline">INSTANT FOOD</span> 2
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link px-0">
-                  {" "}
-                  <span class="d-none d-sm-inline">PRE-ORDER FOOD</span> 3
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link px-0">
-                  {" "}
-                  <span class="d-none d-sm-inline">WISH ORDER</span> 4
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link px-0">
-                  {" "}
-                  <span class="d-none d-sm-inline">CATERING FOOD</span> 4
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link px-0">
-                  {" "}
-                  <span class="d-none d-sm-inline">
-                    FIND US IN THIS STATE
-                  </span>{" "}
-                  4
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li className="w-100">
-            <a href="#" class="nav-link px-0 align-middle">
-              <i class="fs-4 bi-people"></i>{" "}
-              <span class="ms-1 d-none d-sm-inline">CATERING</span>{" "}
-            </a>
-          </li>
-
-          <li className="w-100">
-            <a href="#" class="nav-link px-0 align-middle">
-              <i class="fs-4 bi-people"></i>{" "}
-              <span class="ms-1 d-none d-sm-inline">FAQ</span>{" "}
-            </a>
-          </li>
-          <li className="w-100">
-            <a href="#" class="nav-link px-0 align-middle">
-              <i class="fs-4 bi-people"></i>{" "}
-              <span class="ms-1 d-none d-sm-inline">BLOG</span>{" "}
-            </a>
-          </li>
-
-          <li className="w-100">
-            <a href="#" class="nav-link px-0 align-middle">
-              <i class="fs-4 bi-people"></i>{" "}
-              <span class="ms-1 d-none d-sm-inline">OPEN YOUR ACCOUNT</span>{" "}
-            </a>
-          </li>
-
-          <li className="w-100">
-            <a href="#" class="nav-link px-0 align-middle">
-              <i class="fs-4 bi-people"></i>{" "}
-              <span class="ms-1 d-none d-sm-inline">SIGN IN</span>{" "}
-            </a>
-          </li>
-        </ul>
-        <hr />
-        {/* <div class="dropdown pb-4">
-                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle"/>
-                        <span class="d-none d-sm-inline mx-1">loser</span>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-                        <li><a class="dropdown-item" href="#">New project...</a></li>
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li>
-                            <hr class="dropdown-divider"/>
-                        </li>
-                        <li><a class="dropdown-item" href="#">Sign out</a></li>
-                    </ul>
-                </div> */}
+    <div className="sidebar">
+      <div className="sidebar-item mt-5">
+        <div className="sidebar-title">
+          <span>EARN MONEY</span>
+        </div>
       </div>
-    </Box>
+      <hr />
+      <div
+        className={active ? "sidebar-item active " : "sidebar-item "}
+        onClick={() => setActive(!active)}
+      >
+        <div className="sidebar-title">
+          <span>ALL FOOD</span>
+          <i class="fa-sharp fa-solid fa-angle-down"></i>
+        </div>
+        <div className="sidebar-content">POPLULAR KITCHEN</div>
+        <div className="sidebar-content">INSTANT FOOD</div>
+        <div className="sidebar-content">PRE-ORDER FOOD</div>
+        <div className="sidebar-content">WHICH-ORDER</div>
+        <div className="sidebar-content">CATERING FOOD</div>
+        <div className="sidebar-content">FIND US IN THIS STATE</div>
+        <div className="sidebar-content">ALL CATEGORIES</div>
+      </div>
+      <hr />
+      <div className="sidebar-item">
+        <div className="sidebar-title">
+          <span>CATERING</span>
+        </div>
+      </div>
+      <hr />
+      <div className="sidebar-item">
+        <div className="sidebar-title">
+          <span>FAQ</span>
+        </div>
+      </div>
+      <hr />
+      <div className="sidebar-item">
+        <div className="sidebar-title">
+          <span>BLOG</span>
+        </div>
+      </div>
+    </div>
   );
 }
